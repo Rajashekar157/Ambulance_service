@@ -164,7 +164,7 @@
 
 /* Mobile */
 
-@media(max-width:768px){
+@media(max-width:320px){
 
 .standby-container{
     grid-template-columns:1fr;

@@ -15,6 +15,7 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
+      <h3>Screen Width: {window.innerWidth}px</h3>
       <div className="topbar">
         <div className="top-left">
           <span><FaPhoneAlt /> +91 82475 82810</span>

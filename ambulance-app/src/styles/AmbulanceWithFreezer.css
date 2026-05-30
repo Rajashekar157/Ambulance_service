@@ -181,7 +181,7 @@
     background:#e84a26;
 }
 
-@media(max-width:768px){
+@media(max-width:320px){
 
 .freezer-container{
     grid-template-columns:1fr;
