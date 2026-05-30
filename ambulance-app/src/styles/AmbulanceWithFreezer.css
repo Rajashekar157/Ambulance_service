@@ -211,4 +211,39 @@
 .help-box h2{
     font-size:28px;
 }
+
+
+
+
+@media(max-width:392px){
+
+.freezer-container{
+    grid-template-columns:1fr;
+}
+
+.freezer-overlay h1{
+    font-size:34px;
+}
+
+.freezer-overlay p{
+    font-size:15px;
+    padding:0 15px;
+}
+
+.freezer-left h2{
+    font-size:28px;
+}
+
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.freezer-left h3{
+    font-size:24px;
+}
+
+.help-box h2{
+    font-size:28px;
+}
+}
 }
