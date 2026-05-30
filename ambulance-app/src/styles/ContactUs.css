@@ -173,17 +173,11 @@
     font-weight:600;
     cursor:pointer;
 }
-
 /* =====================
-   MOBILE
+   TABLET + MOBILE
 ===================== */
 
-@media(max-width:320px){
-
-.contact-page{
-    grid-template-columns:1fr;
-    gap:25px;
-}
+@media(max-width:780px){
 
 .contact-banner{
     height:180px;
@@ -194,31 +188,74 @@
 }
 
 .banner-text{
-    font-size:12px;
-    padding:0 15px;
+    font-size:13px;
+    padding:0 20px;
+    line-height:1.7;
 }
 
-.contact-left h2,
+.contact-page{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:35px 20px;
+}
+
+.contact-left h2{
+    font-size:26px;
+}
+
 .contact-right h2{
     font-size:24px;
 }
 
-.form-row{
-    flex-direction:column;
+.contact-left p{
+    font-size:14px;
 }
 
 .info-card{
-    padding:15px;
+    padding:16px;
+    gap:12px;
 }
 
 .icon-box{
-    width:45px;
-    height:45px;
-    font-size:16px;
-}
+    width:50px;
+    height:50px;
+    font-size:18px;
 }
 
-/* 320px */
+.info-card h3{
+    font-size:16px;
+}
+
+.info-card p{
+    font-size:13px;
+}
+
+.contact-right{
+    padding:20px;
+}
+
+.form-row{
+    flex-direction:column;
+    gap:12px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    font-size:13px;
+    padding:12px;
+}
+
+.contact-form button{
+    font-size:14px;
+    padding:12px;
+}
+
+}
+
+/* =====================
+   SMALL PHONES (320px)
+===================== */
 
 @media(max-width:320px){
 
@@ -228,9 +265,20 @@
 
 .contact-banner h1{
     font-size:22px;
+    margin-bottom:5px;
 }
 
 .banner-text{
+    font-size:10px;
+    padding:0 10px;
+}
+
+.contact-page{
+    padding:20px 10px;
+    gap:20px;
+}
+
+.contact-tag{
     font-size:10px;
 }
 
@@ -239,13 +287,41 @@
     font-size:18px;
 }
 
-.contact-left p,
-.info-card p{
+.contact-line{
+    width:40px;
+    margin:10px 0;
+}
+
+.contact-left p{
     font-size:11px;
+    line-height:1.6;
+}
+
+.info-card{
+    padding:12px;
+    gap:10px;
+}
+
+.icon-box{
+    width:40px;
+    height:40px;
+    font-size:14px;
 }
 
 .info-card h3{
-    font-size:14px;
+    font-size:13px;
+}
+
+.info-card p{
+    font-size:10px;
+}
+
+.contact-right{
+    padding:15px;
+}
+
+.contact-form{
+    gap:10px;
 }
 
 .contact-form input,
@@ -256,7 +332,8 @@
 }
 
 .contact-form button{
-    font-size:12px;
+    font-size:11px;
     padding:10px;
 }
+
 }

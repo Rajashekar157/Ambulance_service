@@ -180,6 +180,110 @@
 .help-box button:hover{
     background:#e84a26;
 }
+/* =================================
+   TABLET + MOBILE (780px)
+================================= */
+
+@media(max-width:780px){
+
+.freezer-container{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:35px 20px;
+}
+
+.freezer-banner{
+    height:220px;
+}
+
+.freezer-overlay h1{
+    font-size:38px;
+}
+
+.freezer-overlay p{
+    font-size:14px;
+    padding:0 20px;
+    line-height:1.7;
+}
+
+.service-badge{
+    font-size:12px;
+    padding:8px 14px;
+}
+
+.freezer-left h2{
+    font-size:30px;
+}
+
+.freezer-left p{
+    font-size:14px;
+    line-height:1.8;
+}
+
+.feature-grid{
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.feature-card{
+    padding:15px;
+}
+
+.feature-card h4{
+    font-size:16px;
+}
+
+.feature-card p{
+    font-size:13px;
+}
+
+.freezer-left h3{
+    font-size:24px;
+}
+
+.benefit-list li{
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.info-box{
+    padding:20px;
+}
+
+.info-box h3{
+    font-size:22px;
+}
+
+.info-item{
+    font-size:14px;
+}
+
+.help-box{
+    padding:25px;
+}
+
+.help-box h3{
+    font-size:22px;
+}
+
+.help-box p{
+    font-size:14px;
+}
+
+.help-box h2{
+    font-size:32px;
+}
+
+.help-box button{
+    font-size:14px;
+    padding:12px;
+}
+
+}
+
+/* =================================
+   SMALL PHONES ONLY (320px)
+================================= */
 
 @media(max-width:320px){
 
@@ -187,63 +291,87 @@
     grid-template-columns:1fr;
 }
 
+.freezer-banner{
+    height:170px;
+}
+
 .freezer-overlay h1{
-    font-size:34px;
+    font-size:24px;
 }
 
 .freezer-overlay p{
-    font-size:15px;
-    padding:0 15px;
+    font-size:11px;
+    padding:0 10px;
+}
+
+.service-badge{
+    font-size:10px;
+    padding:6px 10px;
 }
 
 .freezer-left h2{
-    font-size:28px;
+    font-size:20px;
+}
+
+.freezer-left p{
+    font-size:12px;
 }
 
 .feature-grid{
     grid-template-columns:1fr;
 }
 
-.freezer-left h3{
-    font-size:24px;
+.feature-card{
+    padding:12px;
 }
 
-.help-box h2{
-    font-size:28px;
+.feature-card h4{
+    font-size:14px;
 }
 
-
-
-
-@media(max-width:392px){
-
-.freezer-container{
-    grid-template-columns:1fr;
-}
-
-.freezer-overlay h1{
-    font-size:34px;
-}
-
-.freezer-overlay p{
-    font-size:15px;
-    padding:0 15px;
-}
-
-.freezer-left h2{
-    font-size:28px;
-}
-
-.feature-grid{
-    grid-template-columns:1fr;
+.feature-card p{
+    font-size:11px;
 }
 
 .freezer-left h3{
-    font-size:24px;
+    font-size:18px;
+}
+
+.benefit-list li{
+    font-size:12px;
+}
+
+.info-box{
+    padding:15px;
+}
+
+.info-box h3{
+    font-size:18px;
+}
+
+.info-item{
+    font-size:12px;
+}
+
+.help-box{
+    padding:18px;
+}
+
+.help-box h3{
+    font-size:18px;
+}
+
+.help-box p{
+    font-size:12px;
 }
 
 .help-box h2{
-    font-size:28px;
+    font-size:24px;
 }
+
+.help-box button{
+    font-size:12px;
+    padding:10px;
 }
+
 }

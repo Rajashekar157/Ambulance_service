@@ -161,28 +161,187 @@
     font-weight:600;
     cursor:pointer;
 }
+/* =================================
+   TABLET + MOBILE (780px)
+================================= */
 
-/* Mobile */
+@media(max-width:780px){
 
-@media(max-width:320px){
+.standby-banner{
+    height:220px;
+}
 
 .standby-container{
     grid-template-columns:1fr;
+    gap:25px;
+    padding:35px 20px;
+}
+
+.service-tag{
+    font-size:12px;
+    padding:6px 14px;
 }
 
 .standby-left h2{
-    font-size:28px;
+    font-size:30px;
+    margin:15px 0;
+}
+
+.standby-left img{
+    border-radius:12px;
+}
+
+.standby-left p{
+    font-size:14px;
+    line-height:1.8;
 }
 
 .standby-cards{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin:25px 0;
+}
+
+.standby-card{
+    padding:16px;
+}
+
+.standby-card h4{
+    font-size:16px;
+}
+
+.standby-card p{
+    font-size:13px;
 }
 
 .standby-left h3{
     font-size:24px;
 }
 
-.emergency-box h2{
-    font-size:28px;
+.standby-list li{
+    font-size:14px;
 }
+
+.service-info-box{
+    padding:20px;
+}
+
+.service-info-box h3{
+    font-size:22px;
+}
+
+.service-info-box div{
+    font-size:14px;
+    padding:12px;
+}
+
+.emergency-box{
+    padding:25px;
+}
+
+.emergency-box h3{
+    font-size:24px;
+}
+
+.emergency-box p{
+    font-size:14px;
+}
+
+.emergency-box h2{
+    font-size:30px;
+}
+
+.emergency-box button{
+    font-size:14px;
+    padding:12px;
+}
+
+}
+
+/* =================================
+   SMALL PHONES (320px)
+================================= */
+
+@media(max-width:320px){
+
+.standby-banner{
+    height:160px;
+}
+
+.standby-container{
+    padding:20px 10px;
+}
+
+.service-tag{
+    font-size:10px;
+    padding:5px 10px;
+}
+
+.standby-left h2{
+    font-size:22px;
+}
+
+.standby-left p{
+    font-size:12px;
+}
+
+.standby-cards{
+    grid-template-columns:1fr;
+    gap:10px;
+}
+
+.standby-card{
+    padding:12px;
+}
+
+.standby-card h4{
+    font-size:14px;
+}
+
+.standby-card p{
+    font-size:11px;
+}
+
+.standby-left h3{
+    font-size:18px;
+}
+
+.standby-list li{
+    font-size:12px;
+}
+
+.service-info-box{
+    padding:15px;
+}
+
+.service-info-box h3{
+    font-size:16px;
+}
+
+.service-info-box div{
+    font-size:11px;
+    padding:10px;
+}
+
+.emergency-box{
+    padding:18px;
+}
+
+.emergency-box h3{
+    font-size:18px;
+}
+
+.emergency-box p{
+    font-size:11px;
+}
+
+.emergency-box h2{
+    font-size:22px;
+}
+
+.emergency-box button{
+    font-size:11px;
+    padding:10px;
+}
+
 }

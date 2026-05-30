@@ -359,4 +359,118 @@ img{
     height:auto;
 }
 
+/* =================================
+   TABLET + MOBILE (780px)
+================================= */
+
+@media(max-width:780px){
+
+.road-banner{
+    height:220px;
+}
+
+.road-overlay h1{
+    font-size:32px;
+}
+
+.road-overlay p{
+    font-size:14px;
+    padding:0 15px;
+}
+
+.road-intro{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:35px 20px;
+}
+
+.road-content h2{
+    font-size:26px;
+}
+
+.road-content p{
+    font-size:14px;
+}
+
+.road-image img{
+    border-radius:12px;
+}
+
+.road-stats{
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.stat-box h3{
+    font-size:24px;
+}
+
+.stat-box p{
+    font-size:13px;
+}
+
+.journey-section{
+    padding:40px 20px;
+}
+
+.journey-section h2{
+    font-size:26px;
+}
+
+.timeline{
+    padding-left:20px;
+}
+
+.step{
+    gap:12px;
+}
+
+.circle{
+    width:36px;
+    height:36px;
+    min-width:36px;
+}
+
+.step h4{
+    font-size:15px;
+}
+
+.step p{
+    font-size:13px;
+}
+
+.coverage{
+    padding:35px 20px;
+}
+
+.coverage h2{
+    font-size:24px;
+}
+
+.coverage-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+.coverage-grid div{
+    font-size:13px;
+}
+
+.road-cta{
+    padding:40px 20px;
+}
+
+.road-cta h2{
+    font-size:24px;
+}
+
+.road-cta p{
+    font-size:14px;
+}
+
+.road-cta a{
+    font-size:13px;
+}
+
+}
+
 }

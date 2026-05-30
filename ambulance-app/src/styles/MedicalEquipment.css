@@ -192,46 +192,144 @@
     border-radius:8px;
     cursor:pointer;
 }
+/* ==========================
+   TABLET + MOBILE (780px)
+========================== */
 
-/* MOBILE */
+@media(max-width:780px){
 
-@media(max-width:768px){
+.equipment-hero{
+    height:220px;
+}
+
+.equipment-overlay h1{
+    font-size:30px;
+}
+
+.equipment-overlay p{
+    font-size:13px;
+    padding:0 15px;
+}
 
 .equipment-intro{
     grid-template-columns:1fr;
+    gap:25px;
+    padding:35px 20px;
+}
+
+.equipment-tag{
+    font-size:11px;
+    padding:6px 14px;
+}
+
+.intro-left h2{
+    font-size:26px;
+}
+
+.intro-left p{
+    font-size:14px;
+    line-height:1.8;
+}
+
+.intro-right img{
+    border-radius:12px;
 }
 
 .equipment-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.equipment-card{
+    padding:18px;
+}
+
+.equipment-card h3{
+    font-size:16px;
+}
+
+.equipment-card p{
+    font-size:13px;
+}
+
+.benefits-section{
+    padding:35px 20px;
+}
+
+.benefits-section h2{
+    font-size:24px;
 }
 
 .benefits-wrapper{
     grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
-.equipment-overlay h1{
-    font-size:28px;
+.benefit-box{
+    padding:18px;
 }
 
-.intro-left h2{
+.benefit-box span{
+    font-size:22px;
+}
+
+.benefit-box h4{
+    font-size:14px;
+}
+
+.equipment-contact{
+    padding:35px 20px;
+}
+
+.contact-card{
+    padding:25px;
+}
+
+.contact-card h2{
     font-size:24px;
 }
+
+.contact-card p{
+    font-size:14px;
 }
 
-/* 320px */
+.contact-card h3{
+    font-size:24px;
+}
+
+.contact-card button{
+    font-size:14px;
+    padding:10px 20px;
+}
+
+}
+
+/* ==========================
+   SMALL PHONES (320px)
+========================== */
 
 @media(max-width:320px){
 
 .equipment-hero{
-    height:180px;
+    height:170px;
 }
 
 .equipment-overlay h1{
-    font-size:20px;
+    font-size:22px;
 }
 
 .equipment-overlay p{
     font-size:11px;
+    padding:0 10px;
+}
+
+.equipment-intro{
+    padding:20px 10px;
+}
+
+.equipment-tag{
+    font-size:10px;
+    padding:5px 10px;
 }
 
 .intro-left h2{
@@ -242,19 +340,65 @@
     font-size:12px;
 }
 
+.intro-right img{
+    border-radius:8px;
+}
+
+.equipment-grid{
+    grid-template-columns:1fr;
+}
+
+.equipment-card{
+    padding:12px;
+}
+
+.equipment-card h3{
+    font-size:14px;
+}
+
+.equipment-card p{
+    font-size:11px;
+}
+
+.benefits-section h2{
+    font-size:18px;
+}
+
 .benefits-wrapper{
     grid-template-columns:1fr;
 }
 
+.benefit-box{
+    padding:12px;
+}
+
+.benefit-box span{
+    font-size:18px;
+}
+
+.benefit-box h4{
+    font-size:12px;
+}
+
 .contact-card{
-    padding:20px;
+    padding:18px;
 }
 
 .contact-card h2{
     font-size:18px;
 }
 
-.contact-card h3{
-    font-size:20px;
+.contact-card p{
+    font-size:11px;
 }
+
+.contact-card h3{
+    font-size:18px;
+}
+
+.contact-card button{
+    font-size:11px;
+    padding:8px 14px;
+}
+
 }

@@ -183,27 +183,207 @@
     font-size:16px;
     cursor:pointer;
 }
+/* ==========================
+   TABLET + MOBILE (780px)
+========================== */
 
-@media(max-width:320px){
+@media(max-width:780px){
 
-.service-page{
-    grid-template-columns:1fr;
+.service-banner{
+    height:220px;
 }
 
 .service-overlay h1{
-    font-size:28px;
+    font-size:32px;
+}
+
+.service-overlay p{
+    font-size:14px;
+    padding:0 15px;
+}
+
+.service-page{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:35px 20px;
+}
+
+.service-image-card img{
+    border-radius:12px;
 }
 
 .service-content-card h2{
-    font-size:26px;
+    font-size:28px;
+}
+
+.service-content-card h3{
+    font-size:22px;
+}
+
+.service-content-card p{
+    font-size:14px;
+    line-height:1.8;
+}
+
+.highlight-box{
+    padding:18px;
+}
+
+.highlight-box li{
+    font-size:14px;
+}
+
+.benefits-grid{
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.benefit-card{
+    padding:15px;
+}
+
+.benefit-card h4{
+    font-size:15px;
+}
+
+.benefit-card p{
+    font-size:13px;
+}
+
+.faq-mini{
+    padding:15px;
+}
+
+.service-list-box{
+    padding:20px;
+}
+
+.service-list-box h3{
+    font-size:22px;
+}
+
+.service-list-box a{
+    font-size:14px;
+    padding:12px;
+}
+
+.call-box{
+    padding:25px;
+}
+
+.call-box h3{
+    font-size:24px;
+}
+
+.call-box p{
+    font-size:14px;
+}
+
+.call-box h2{
+    font-size:30px;
+}
+
+.call-box button{
+    font-size:14px;
+    padding:12px;
+}
+
+}
+
+/* ==========================
+   SMALL PHONES (320px)
+========================== */
+
+@media(max-width:320px){
+
+.service-banner{
+    height:160px;
+}
+
+.service-overlay h1{
+    font-size:22px;
+}
+
+.service-overlay p{
+    font-size:11px;
+}
+
+.service-page{
+    padding:20px 10px;
+}
+
+.service-content-card h2{
+    font-size:20px;
+}
+
+.service-content-card h3{
+    font-size:16px;
+}
+
+.service-content-card p{
+    font-size:12px;
+}
+
+.highlight-box{
+    padding:12px;
+}
+
+.highlight-box li{
+    font-size:11px;
 }
 
 .benefits-grid{
     grid-template-columns:1fr;
 }
 
+.benefit-card{
+    padding:12px;
+}
+
+.benefit-card h4{
+    font-size:13px;
+}
+
+.benefit-card p{
+    font-size:11px;
+}
+
+.faq-mini{
+    padding:12px;
+}
+
+.service-list-box{
+    padding:15px;
+}
+
+.service-list-box h3{
+    font-size:16px;
+}
+
+.service-list-box a{
+    font-size:11px;
+    padding:10px;
+}
+
+.call-box{
+    padding:18px;
+}
+
+.call-box h3{
+    font-size:18px;
+}
+
+.call-box p{
+    font-size:11px;
+}
+
 .call-box h2{
-    font-size:28px;
+    font-size:22px;
+}
+
+.call-box button{
+    font-size:11px;
+    padding:10px;
 }
 
 }
