@@ -1398,4 +1398,758 @@ body {
     font-size:18px;
 }
 
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+  /* TOPBAR */
+
+  .topbar{
+    padding:6px 4px;
+  }
+
+  .top-left{
+    gap:6px;
+    font-size:9px;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px;
+    height:auto;
+  }
+
+  .logo{
+    gap:4px;
+  }
+
+  .logo img{
+    width:24px;
+  }
+
+  .logo h3{
+    font-size:10px;
+    line-height:1.2;
+  }
+
+  .menu-wrapper{
+    position:relative;
+  }
+
+  .mobile-menu{
+    display:block;
+    font-size:22px;
+    cursor:pointer;
+    color:#0f172a;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+    flex-direction:column;
+
+    position:absolute;
+    top:35px;
+    right:0;
+
+    width:140px;
+
+    background:#fff;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    z-index:9999;
+  }
+
+  .nav-links.active li{
+    list-style:none;
+    padding:8px 0;
+    font-size:11px;
+    border-bottom:1px solid #eee;
+  }
+
+  .nav-links.active li:last-child{
+    border-bottom:none;
+  }
+
+  .emergency{
+    display:none;
+  }
+
+  /* HERO */
+
+  .hero{
+    min-height:auto;
+  }
+
+  .hero-content{
+    padding:15px 10px;
+    text-align:center;
+  }
+
+  .tag{
+    font-size:10px;
+    padding:5px 10px;
+  }
+
+  .hero h1{
+    font-size:18px;
+    line-height:1.3;
+    max-width:100%;
+  }
+
+  .hero p{
+    font-size:11px;
+    line-height:1.6;
+    max-width:100%;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .call-btn,
+  .book-btn{
+    width:100%;
+    font-size:11px;
+    padding:8px;
+  }
+
+  /* HELPLINE */
+
+  .helpline-card{
+    flex-direction:column;
+    width:100%;
+    padding:10px;
+    gap:10px;
+    text-align:center;
+  }
+
+  .help-left{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .ambulance-icon{
+    width:35px;
+    height:35px;
+  }
+
+  .help-left h2{
+    font-size:13px;
+  }
+
+  .help-left p{
+    font-size:10px;
+  }
+
+  .help-btn{
+    width:100%;
+    font-size:11px;
+    padding:8px;
+  }
+
+  /* ABOUT */
+
+  .about-section{
+    flex-direction:column;
+    padding:20px 10px;
+    gap:15px;
+  }
+
+  .about-image img{
+    width:100%;
+    height:180px;
+    border-radius:10px;
+  }
+
+  .experience-box{
+    width:70px;
+    height:70px;
+    right:5px;
+    bottom:5px;
+  }
+
+  .experience-box h2{
+    font-size:18px;
+  }
+
+  .experience-box p{
+    font-size:8px;
+  }
+
+  .about-tag{
+    font-size:10px;
+  }
+
+  .about-content{
+    text-align:center;
+  }
+
+  .about-content h2{
+    font-size:18px;
+    line-height:1.3;
+  }
+
+  .about-content p{
+    font-size:11px;
+    line-height:1.6;
+  }
+
+  .about-line{
+    width:40px;
+    margin:10px auto;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .feature-item{
+    font-size:11px;
+  }
+
+  /* FLOATING BUTTONS */
+
+  .floating-buttons{
+    left:5px;
+    bottom:5px;
+  }
+
+  .floating-buttons a{
+    width:35px;
+    height:35px;
+    font-size:14px;
+  }
+     .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-header h2{
+        font-size:26px;
+    }
+
+    .service-content h3{
+        font-size:18px;
+    }
+
+    .service-content p{
+        font-size:13px;
+    }
+
+        .why-section{
+        flex-direction:column;
+    }
+
+    .why-right{
+        grid-template-columns:1fr;
+    }
+
+    .why-left h2{
+        font-size:28px;
+    }
+
+    .cta-overlay h2{
+        font-size:28px;
+    }
+
+    .cta-overlay p{
+        font-size:14px;
+        padding:0 15px;
+    }
+
+    .cta-btn{
+        width:90%;
+    }
+     .reach-grid,
+    .review-grid,
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid img{
+        height:180px;
+    }
+       .contact-section{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .form-row{
+        flex-direction:column;
+    }
+
+    .contact-left h2,
+    .contact-right h2{
+        font-size:20px;
+    }
+    
+
+    .faq-container summary{
+        font-size:13px;
+    }
+
+    .faq-container p{
+        font-size:11px;
+    }
+
+    .contact-card h3{
+        font-size:14px;
+    }
+
+    .contact-card p{
+        font-size:11px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea{
+        font-size:11px;
+        padding:10px;
+    }
+
+    .booking-form button{
+        font-size:12px;
+    }
+    
+.footer-container{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:25px 15px;
+    text-align:center;
+}
+
+.footer-about img{
+    width:100px;
+    margin:auto;
+}
+
+.footer-services h3,
+.footer-contact h3{
+    font-size:20px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-services li{
+    font-size:13px;
+}
+
+.footer-bottom{
+    font-size:11px;
+    padding:10px;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.floating-buttons{
+    left:8px;
+    bottom:10px;
+}
+
+.floating-buttons a{
+    width:45px;
+    height:45px;
+    font-size:18px;
+}
+
+}
+
+
+
+@media screen and (max-width: 728px) {
+
+  /* TOPBAR */
+
+  .topbar{
+    padding:6px 4px;
+  }
+
+  .top-left{
+    gap:6px;
+    font-size:9px;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px;
+    height:auto;
+  }
+
+  .logo{
+    gap:4px;
+  }
+
+  .logo img{
+    width:24px;
+  }
+
+  .logo h3{
+    font-size:10px;
+    line-height:1.2;
+  }
+
+  .menu-wrapper{
+    position:relative;
+  }
+
+  .mobile-menu{
+    display:block;
+    font-size:22px;
+    cursor:pointer;
+    color:#0f172a;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+    flex-direction:column;
+
+    position:absolute;
+    top:35px;
+    right:0;
+
+    width:140px;
+
+    background:#fff;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    z-index:9999;
+  }
+
+  .nav-links.active li{
+    list-style:none;
+    padding:8px 0;
+    font-size:11px;
+    border-bottom:1px solid #eee;
+  }
+
+  .nav-links.active li:last-child{
+    border-bottom:none;
+  }
+
+  .emergency{
+    display:none;
+  }
+
+  /* HERO */
+
+  .hero{
+    min-height:auto;
+  }
+
+  .hero-content{
+    padding:15px 10px;
+    text-align:center;
+  }
+
+  .tag{
+    font-size:10px;
+    padding:5px 10px;
+  }
+
+  .hero h1{
+    font-size:18px;
+    line-height:1.3;
+    max-width:100%;
+  }
+
+  .hero p{
+    font-size:11px;
+    line-height:1.6;
+    max-width:100%;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .call-btn,
+  .book-btn{
+    width:100%;
+    font-size:11px;
+    padding:8px;
+  }
+
+  /* HELPLINE */
+
+  .helpline-card{
+    flex-direction:column;
+    width:100%;
+    padding:10px;
+    gap:10px;
+    text-align:center;
+  }
+
+  .help-left{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .ambulance-icon{
+    width:35px;
+    height:35px;
+  }
+
+  .help-left h2{
+    font-size:13px;
+  }
+
+  .help-left p{
+    font-size:10px;
+  }
+
+  .help-btn{
+    width:100%;
+    font-size:11px;
+    padding:8px;
+  }
+
+  /* ABOUT */
+
+  .about-section{
+    flex-direction:column;
+    padding:20px 10px;
+    gap:15px;
+  }
+
+  .about-image img{
+    width:100%;
+    height:180px;
+    border-radius:10px;
+  }
+
+  .experience-box{
+    width:70px;
+    height:70px;
+    right:5px;
+    bottom:5px;
+  }
+
+  .experience-box h2{
+    font-size:18px;
+  }
+
+  .experience-box p{
+    font-size:8px;
+  }
+
+  .about-tag{
+    font-size:10px;
+  }
+
+  .about-content{
+    text-align:center;
+  }
+
+  .about-content h2{
+    font-size:18px;
+    line-height:1.3;
+  }
+
+  .about-content p{
+    font-size:11px;
+    line-height:1.6;
+  }
+
+  .about-line{
+    width:40px;
+    margin:10px auto;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .feature-item{
+    font-size:11px;
+  }
+
+  /* FLOATING BUTTONS */
+
+  .floating-buttons{
+    left:5px;
+    bottom:5px;
+  }
+
+  .floating-buttons a{
+    width:35px;
+    height:35px;
+    font-size:14px;
+  }
+     .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-header h2{
+        font-size:26px;
+    }
+
+    .service-content h3{
+        font-size:18px;
+    }
+
+    .service-content p{
+        font-size:13px;
+    }
+
+        .why-section{
+        flex-direction:column;
+    }
+
+    .why-right{
+        grid-template-columns:1fr;
+    }
+
+    .why-left h2{
+        font-size:28px;
+    }
+
+    .cta-overlay h2{
+        font-size:28px;
+    }
+
+    .cta-overlay p{
+        font-size:14px;
+        padding:0 15px;
+    }
+
+    .cta-btn{
+        width:90%;
+    }
+     .reach-grid,
+    .review-grid,
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid img{
+        height:180px;
+    }
+       .contact-section{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .form-row{
+        flex-direction:column;
+    }
+
+    .contact-left h2,
+    .contact-right h2{
+        font-size:20px;
+    }
+    
+
+    .faq-container summary{
+        font-size:13px;
+    }
+
+    .faq-container p{
+        font-size:11px;
+    }
+
+    .contact-card h3{
+        font-size:14px;
+    }
+
+    .contact-card p{
+        font-size:11px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea{
+        font-size:11px;
+        padding:10px;
+    }
+
+    .booking-form button{
+        font-size:12px;
+    }
+    
+.footer-container{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:25px 15px;
+    text-align:center;
+}
+
+.footer-about img{
+    width:100px;
+    margin:auto;
+}
+
+.footer-services h3,
+.footer-contact h3{
+    font-size:20px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-services li{
+    font-size:13px;
+}
+
+.footer-bottom{
+    font-size:11px;
+    padding:10px;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.floating-buttons{
+    left:8px;
+    bottom:10px;
+}
+
+.floating-buttons a{
+    width:45px;
+    height:45px;
+    font-size:18px;
+}
+}
+
+
+
 }
