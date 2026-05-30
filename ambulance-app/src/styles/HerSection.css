@@ -1025,371 +1025,271 @@ body {
     color:#ff5c35;
 }
 
+@media screen and (max-width:768px){
 
+/* TOPBAR */
 
-@media screen and (max-width: 320px) {
+.topbar{
+    padding:8px 10px;
+}
 
-  /* TOPBAR */
-
-  .topbar{
-    padding:6px 4px;
-  }
-
-  .top-left{
-    gap:6px;
-    font-size:9px;
+.top-left{
+    display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    gap:10px;
+    font-size:11px;
     text-align:center;
-  }
+}
 
-  /* NAVBAR */
+/* NAVBAR */
 
-  .navbar{
-    position:relative;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    padding:8px;
+.navbar{
+    padding:10px 15px;
     height:auto;
-  }
+}
 
-  .logo{
-    gap:4px;
-  }
+.logo img{
+    width:32px;
+}
 
-  .logo img{
-    width:24px;
-  }
+.logo h3{
+    font-size:14px;
+}
 
-  .logo h3{
-    font-size:10px;
-    line-height:1.2;
-  }
-
-  .menu-wrapper{
-    position:relative;
-  }
-
-  .mobile-menu{
+.mobile-menu{
     display:block;
-    font-size:22px;
-    cursor:pointer;
-    color:#0f172a;
-  }
+    font-size:26px;
+}
 
-  .nav-links{
+.nav-links{
     display:none;
-  }
+}
 
-  .nav-links.active{
+.nav-links.active{
     display:flex;
     flex-direction:column;
 
     position:absolute;
-    top:35px;
-    right:0;
+    top:55px;
+    right:10px;
 
-    width:140px;
+    width:180px;
 
     background:#fff;
+    border-radius:10px;
 
     padding:10px;
 
-    border-radius:8px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 
     z-index:9999;
-  }
+}
 
-  .nav-links.active li{
-    list-style:none;
-    padding:8px 0;
-    font-size:11px;
+.nav-links.active li{
+    padding:10px 0;
     border-bottom:1px solid #eee;
-  }
-
-  .nav-links.active li:last-child{
-    border-bottom:none;
-  }
-
-  .emergency{
-    display:none;
-  }
-
-  /* HERO */
-
-  .hero{
-    min-height:auto;
-  }
-
-  .hero-content{
-    padding:15px 10px;
-    text-align:center;
-  }
-
-  .tag{
-    font-size:10px;
-    padding:5px 10px;
-  }
-
-  .hero h1{
-    font-size:18px;
-    line-height:1.3;
-    max-width:100%;
-  }
-
-  .hero p{
-    font-size:11px;
-    line-height:1.6;
-    max-width:100%;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-    gap:8px;
-  }
-
-  .call-btn,
-  .book-btn{
-    width:100%;
-    font-size:11px;
-    padding:8px;
-  }
-
-  /* HELPLINE */
-
-  .helpline-card{
-    flex-direction:column;
-    width:100%;
-    padding:10px;
-    gap:10px;
-    text-align:center;
-  }
-
-  .help-left{
-    flex-direction:column;
-    gap:8px;
-  }
-
-  .ambulance-icon{
-    width:35px;
-    height:35px;
-  }
-
-  .help-left h2{
     font-size:13px;
-  }
+}
 
-  .help-left p{
-    font-size:10px;
-  }
+.emergency{
+    display:none;
+}
 
-  .help-btn{
-    width:100%;
-    font-size:11px;
-    padding:8px;
-  }
+/* HERO */
 
-  /* ABOUT */
+.hero{
+    min-height:auto;
+}
 
-  .about-section{
-    flex-direction:column;
-    padding:20px 10px;
-    gap:15px;
-  }
-
-  .about-image img{
-    width:100%;
-    height:180px;
-    border-radius:10px;
-  }
-
-  .experience-box{
-    width:70px;
-    height:70px;
-    right:5px;
-    bottom:5px;
-  }
-  
-
-  .experience-box h2{
-    font-size:18px;
-  }
-
-  .experience-box p{
-    font-size:8px;
-  }
-
-  .about-tag{
-    font-size:10px;
-  }
-
-  .about-content{
-    text-align:center;
-  }
-
-  .about-content h2{
-    font-size:18px;
-    line-height:1.3;
-  }
-
-  .about-content p{
-    font-size:11px;
-    line-height:1.6;
-  }
-
-  .about-line{
-    width:40px;
-    margin:10px auto;
-  }
-
-  .features{
-    grid-template-columns:1fr;
-    gap:8px;
-  }
-
-  .feature-item{
-    font-size:11px;
-  }
-
-  /* FLOATING BUTTONS */
-
-  .floating-buttons{
-    left:5px;
-    bottom:5px;
-  }
-
-  .floating-buttons a{
-    width:35px;
-    height:35px;
-    font-size:14px;
-  }
-     .services-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-header h2{
-        font-size:26px;
-    }
-
-    .service-content h3{
-        font-size:18px;
-    }
-
-    .service-content p{
-        font-size:13px;
-    }
-
-        .why-section{
-        flex-direction:column;
-    }
-
-    .why-right{
-        grid-template-columns:1fr;
-    }
-
-    .why-left h2{
-        font-size:28px;
-    }
-
-    .cta-overlay h2{
-        font-size:28px;
-    }
-
-    .cta-overlay p{
-        font-size:14px;
-        padding:0 15px;
-    }
-
-    .cta-btn{
-        width:90%;
-    }
-     .reach-grid,
-    .review-grid,
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-grid img{
-        height:180px;
-    }
-       .contact-section{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .form-row{
-        flex-direction:column;
-    }
-
-    .contact-left h2,
-    .contact-right h2{
-        font-size:20px;
-    }
-    
-
-    .faq-container summary{
-        font-size:13px;
-    }
-
-    .faq-container p{
-        font-size:11px;
-    }
-
-    .contact-card h3{
-        font-size:14px;
-    }
-
-    .contact-card p{
-        font-size:11px;
-    }
-
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea{
-        font-size:11px;
-        padding:10px;
-    }
-
-    .booking-form button{
-        font-size:12px;
-    }
-    
-.footer-container{
-    grid-template-columns:1fr;
-    gap:20px;
+.hero-content{
     padding:25px 15px;
     text-align:center;
 }
 
-.footer-about img{
-    width:100px;
-    margin:auto;
+.tag{
+    font-size:11px;
 }
 
-.footer-services h3,
-.footer-contact h3{
-    font-size:20px;
+.hero h1{
+    font-size:26px;
+    line-height:1.3;
+    max-width:100%;
 }
 
-.footer-about p,
-.footer-contact p,
-.footer-services li{
+.hero p{
+    font-size:14px;
+    line-height:1.7;
+    max-width:100%;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.call-btn,
+.book-btn{
+    width:100%;
+    font-size:13px;
+    padding:12px;
+}
+
+/* HELPLINE */
+
+.helpline-card{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+    padding:15px;
+}
+
+.help-left{
+    flex-direction:column;
+}
+
+.help-left h2{
+    font-size:16px;
+}
+
+.help-left p{
+    font-size:12px;
+}
+
+.help-btn{
+    width:100%;
+}
+
+/* ABOUT */
+
+.about-section{
+    flex-direction:column;
+    padding:30px 15px;
+}
+
+.about-image img{
+    height:220px;
+}
+
+.experience-box{
+    width:90px;
+    height:90px;
+}
+
+.experience-box h2{
+    font-size:24px;
+}
+
+.experience-box p{
+    font-size:10px;
+}
+
+.about-content{
+    text-align:center;
+}
+
+.about-content h2{
+    font-size:24px;
+}
+
+.about-content p{
+    font-size:14px;
+}
+
+.features{
+    grid-template-columns:1fr;
+}
+
+.feature-item{
     font-size:13px;
 }
 
-.footer-bottom{
-    font-size:11px;
-    padding:10px;
+/* SERVICES */
+
+.services-grid{
+    grid-template-columns:1fr;
 }
 
-/* ================= FLOATING BUTTONS ================= */
+.service-card img{
+    height:200px;
+}
+
+/* WHY */
+
+.why-section{
+    flex-direction:column;
+}
+
+.why-right{
+    grid-template-columns:1fr;
+}
+
+.why-left h2{
+    font-size:24px;
+}
+
+/* REACH */
+
+.reach-grid{
+    grid-template-columns:1fr;
+}
+
+/* REVIEWS */
+
+.review-grid{
+    display:flex;
+    overflow-x:auto;
+    gap:15px;
+    scroll-snap-type:x mandatory;
+    padding-bottom:10px;
+}
+
+.review-card{
+    min-width:280px;
+    flex-shrink:0;
+    scroll-snap-align:start;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-grid img{
+    height:220px;
+}
+
+/* CONTACT */
+
+.contact-section{
+    flex-direction:column;
+}
+
+.form-row{
+    flex-direction:column;
+}
+
+.contact-left h2,
+.contact-right h2{
+    font-size:22px;
+}
+
+/* FOOTER */
+
+.footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:30px 15px;
+}
+
+.footer-about img{
+    margin:auto;
+}
+
+/* FLOATING BUTTONS */
 
 .floating-buttons{
-    left:8px;
+    left:10px;
     bottom:10px;
 }
 
@@ -1399,758 +1299,228 @@ body {
     font-size:18px;
 }
 
+/* =========================
+   320PX MOBILE ONLY
+========================= */
 
+@media screen and (max-width:320px){
 
+.topbar{
+    padding:5px;
+}
 
-
-
-@media screen and (max-width: 780px) {
-
-  /* TOPBAR */
-
-  .topbar{
-    padding:6px 4px;
-  }
-
-  .top-left{
-    gap:6px;
+.top-left{
+    gap:5px;
     font-size:9px;
-    flex-wrap:wrap;
-    justify-content:center;
-    text-align:center;
-  }
+}
 
-  /* NAVBAR */
-
-  .navbar{
-    position:relative;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    padding:8px;
-    height:auto;
-  }
-
-  .logo{
-    gap:4px;
-  }
-
-  .logo img{
+.logo img{
     width:24px;
-  }
+}
 
-  .logo h3{
-    font-size:10px;
-    line-height:1.2;
-  }
-
-  .menu-wrapper{
-    position:relative;
-  }
-
-  .mobile-menu{
-    display:block;
-    font-size:22px;
-    cursor:pointer;
-    color:#0f172a;
-  }
-
-  .nav-links{
-    display:none;
-  }
-
-  .nav-links.active{
-    display:flex;
-    flex-direction:column;
-
-    position:absolute;
-    top:35px;
-    right:0;
-
-    width:140px;
-
-    background:#fff;
-
-    padding:10px;
-
-    border-radius:8px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
-
-    z-index:9999;
-  }
-
-  .nav-links.active li{
-    list-style:none;
-    padding:8px 0;
+.logo h3{
     font-size:11px;
-    border-bottom:1px solid #eee;
-  }
+}
 
-  .nav-links.active li:last-child{
-    border-bottom:none;
-  }
+.mobile-menu{
+    font-size:22px;
+}
 
-  .emergency{
-    display:none;
-  }
+.nav-links.active{
+    width:150px;
+    top:45px;
+}
 
-  /* HERO */
+.nav-links.active li{
+    font-size:11px;
+    padding:8px 0;
+}
 
-  .hero{
-    min-height:auto;
-  }
+/* HERO */
 
-  .hero-content{
+.hero-content{
     padding:15px 10px;
-    text-align:center;
-  }
+}
 
-  .tag{
-    font-size:10px;
-    padding:5px 10px;
-  }
+.tag{
+    font-size:9px;
+}
 
-  .hero h1{
-    font-size:18px;
+.hero h1{
+    font-size:20px;
     line-height:1.3;
-    max-width:100%;
-  }
+}
 
-  .hero p{
+.hero p{
     font-size:11px;
     line-height:1.6;
-    max-width:100%;
-  }
+}
 
-  .hero-buttons{
-    flex-direction:column;
-    gap:8px;
-  }
-
-  .call-btn,
-  .book-btn{
-    width:100%;
+.call-btn,
+.book-btn{
     font-size:11px;
-    padding:8px;
-  }
+    padding:9px;
+}
 
-  /* HELPLINE */
+/* HELPLINE */
 
-  .helpline-card{
-    flex-direction:column;
-    width:100%;
+.helpline-card{
     padding:10px;
-    gap:10px;
-    text-align:center;
-  }
+}
 
-  .help-left{
-    flex-direction:column;
-    gap:8px;
-  }
-
-  .ambulance-icon{
-    width:35px;
-    height:35px;
-  }
-
-  .help-left h2{
+.help-left h2{
     font-size:13px;
-  }
+}
 
-  .help-left p{
+.help-left p{
     font-size:10px;
-  }
+}
 
-  .help-btn{
-    width:100%;
+.help-btn{
     font-size:11px;
-    padding:8px;
-  }
+}
 
-  /* ABOUT */
+/* ABOUT */
 
-  .about-section{
-    flex-direction:column;
+.about-section{
     padding:20px 10px;
-    gap:15px;
-  }
+}
 
-  .about-image img{
-    width:100%;
+.about-image img{
     height:180px;
-    border-radius:10px;
-  }
+}
 
-  .experience-box{
+.experience-box{
     width:70px;
     height:70px;
-    right:5px;
-    bottom:5px;
-  }
+}
 
-  .experience-box h2{
+.experience-box h2{
     font-size:18px;
-  }
+}
 
-  .experience-box p{
+.experience-box p{
     font-size:8px;
-  }
+}
 
-  .about-tag{
-    font-size:10px;
-  }
-
-  .about-content{
-    text-align:center;
-  }
-
-  .about-content h2{
+.about-content h2{
     font-size:18px;
-    line-height:1.3;
-  }
-
-  .about-content p{
-    font-size:11px;
-    line-height:1.6;
-  }
-
-  .about-line{
-    width:40px;
-    margin:10px auto;
-  }
-
-  .features{
-    grid-template-columns:1fr;
-    gap:8px;
-  }
-
-  .feature-item{
-    font-size:11px;
-  }
-
-  /* FLOATING BUTTONS */
-
-  .floating-buttons{
-    left:5px;
-    bottom:5px;
-  }
-
-  .floating-buttons a{
-    width:35px;
-    height:35px;
-    font-size:14px;
-  }
-     .services-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-header h2{
-        font-size:26px;
-    }
-
-    .service-content h3{
-        font-size:18px;
-    }
-
-    .service-content p{
-        font-size:13px;
-    }
-
-        .why-section{
-        flex-direction:column;
-    }
-
-    .why-right{
-        grid-template-columns:1fr;
-    }
-
-    .why-left h2{
-        font-size:28px;
-    }
-
-    .cta-overlay h2{
-        font-size:28px;
-    }
-
-    .cta-overlay p{
-        font-size:14px;
-        padding:0 15px;
-    }
-
-    .cta-btn{
-        width:90%;
-    }
-     .reach-grid,
-    .review-grid,
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-grid img{
-        height:180px;
-    }
-       .contact-section{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .form-row{
-        flex-direction:column;
-    }
-
-    .contact-left h2,
-    .contact-right h2{
-        font-size:20px;
-    }
-    
-
-    .faq-container summary{
-        font-size:13px;
-    }
-
-    .faq-container p{
-        font-size:11px;
-    }
-
-    .contact-card h3{
-        font-size:14px;
-    }
-
-    .contact-card p{
-        font-size:11px;
-    }
-
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea{
-        font-size:11px;
-        padding:10px;
-    }
-
-    .booking-form button{
-        font-size:12px;
-    }
-    
-.footer-container{
-    grid-template-columns:1fr;
-    gap:20px;
-    padding:25px 15px;
-    text-align:center;
 }
 
-.footer-about img{
-    width:100px;
-    margin:auto;
+.about-content p{
+    font-size:11px;
 }
 
-.footer-services h3,
-.footer-contact h3{
+.feature-item{
+    font-size:11px;
+}
+
+/* SERVICES */
+
+.section-header h2{
     font-size:20px;
+}
+
+.service-content h3{
+    font-size:15px;
+}
+
+.service-content p{
+    font-size:11px;
+}
+
+.service-card img{
+    height:160px;
+}
+
+/* WHY */
+
+.why-left h2{
+    font-size:20px;
+}
+
+.stat-card{
+    height:100px;
+}
+
+.stat-card h2{
+    font-size:22px;
+}
+
+.stat-card p{
+    font-size:10px;
+}
+
+/* CTA */
+
+.cta-overlay h2{
+    font-size:20px;
+}
+
+.cta-overlay p{
+    font-size:11px;
+}
+
+.cta-btn{
+    font-size:11px;
+    padding:10px;
+}
+
+/* REVIEWS */
+
+.review-card{
+    min-width:240px;
+}
+
+/* CONTACT */
+
+.contact-left h2,
+.contact-right h2{
+    font-size:18px;
+}
+
+.contact-card h3{
+    font-size:13px;
+}
+
+.contact-card p{
+    font-size:10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    font-size:11px;
+    padding:8px;
+}
+
+.booking-form button{
+    font-size:11px;
+}
+
+/* FOOTER */
+
+.footer-container{
+    padding:20px 10px;
 }
 
 .footer-about p,
 .footer-contact p,
 .footer-services li{
-    font-size:13px;
+    font-size:11px;
 }
 
 .footer-bottom{
-    font-size:11px;
-    padding:10px;
+    font-size:10px;
 }
 
-/* ================= FLOATING BUTTONS ================= */
-
-.floating-buttons{
-    left:8px;
-    bottom:10px;
-}
+/* FLOATING BUTTONS */
 
 .floating-buttons a{
-    width:45px;
-    height:45px;
-    font-size:18px;
+    width:38px;
+    height:38px;
+    font-size:15px;
 }
 
 }
-
-
-
-@media screen and (max-width: 728px) {
-
-  /* TOPBAR */
-
-  .topbar{
-    padding:6px 4px;
-  }
-
-  .top-left{
-    gap:6px;
-    font-size:9px;
-    flex-wrap:wrap;
-    justify-content:center;
-    text-align:center;
-  }
-
-  /* NAVBAR */
-
-  .navbar{
-    position:relative;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    padding:8px;
-    height:auto;
-  }
-
-  .logo{
-    gap:4px;
-  }
-
-  .logo img{
-    width:24px;
-  }
-
-  .logo h3{
-    font-size:10px;
-    line-height:1.2;
-  }
-
-  .menu-wrapper{
-    position:relative;
-  }
-
-  .mobile-menu{
-    display:block;
-    font-size:22px;
-    cursor:pointer;
-    color:#0f172a;
-  }
-
-  .nav-links{
-    display:none;
-  }
-
-  .nav-links.active{
-    display:flex;
-    flex-direction:column;
-
-    position:absolute;
-    top:35px;
-    right:0;
-
-    width:140px;
-
-    background:#fff;
-
-    padding:10px;
-
-    border-radius:8px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
-
-    z-index:9999;
-  }
-
-  .nav-links.active li{
-    list-style:none;
-    padding:8px 0;
-    font-size:11px;
-    border-bottom:1px solid #eee;
-  }
-
-  .nav-links.active li:last-child{
-    border-bottom:none;
-  }
-
-  .emergency{
-    display:none;
-  }
-
-  /* HERO */
-
-  .hero{
-    min-height:auto;
-  }
-
-  .hero-content{
-    padding:15px 10px;
-    text-align:center;
-  }
-
-  .tag{
-    font-size:10px;
-    padding:5px 10px;
-  }
-
-  .hero h1{
-    font-size:18px;
-    line-height:1.3;
-    max-width:100%;
-  }
-
-  .hero p{
-    font-size:11px;
-    line-height:1.6;
-    max-width:100%;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-    gap:8px;
-  }
-
-  .call-btn,
-  .book-btn{
-    width:100%;
-    font-size:11px;
-    padding:8px;
-  }
-
-  /* HELPLINE */
-
-  .helpline-card{
-    flex-direction:column;
-    width:100%;
-    padding:10px;
-    gap:10px;
-    text-align:center;
-  }
-
-  .help-left{
-    flex-direction:column;
-    gap:8px;
-  }
-
-  .ambulance-icon{
-    width:35px;
-    height:35px;
-  }
-
-  .help-left h2{
-    font-size:13px;
-  }
-
-  .help-left p{
-    font-size:10px;
-  }
-
-  .help-btn{
-    width:100%;
-    font-size:11px;
-    padding:8px;
-  }
-
-  /* ABOUT */
-
-  .about-section{
-    flex-direction:column;
-    padding:20px 10px;
-    gap:15px;
-  }
-
-  .about-image img{
-    width:100%;
-    height:180px;
-    border-radius:10px;
-  }
-
-  .experience-box{
-    width:70px;
-    height:70px;
-    right:5px;
-    bottom:5px;
-  }
-
-  .experience-box h2{
-    font-size:18px;
-  }
-
-  .experience-box p{
-    font-size:8px;
-  }
-
-  .about-tag{
-    font-size:10px;
-  }
-
-  .about-content{
-    text-align:center;
-  }
-
-  .about-content h2{
-    font-size:18px;
-    line-height:1.3;
-  }
-
-  .about-content p{
-    font-size:11px;
-    line-height:1.6;
-  }
-
-  .about-line{
-    width:40px;
-    margin:10px auto;
-  }
-
-  .features{
-    grid-template-columns:1fr;
-    gap:8px;
-  }
-
-  .feature-item{
-    font-size:11px;
-  }
-
-  /* FLOATING BUTTONS */
-
-  .floating-buttons{
-    left:5px;
-    bottom:5px;
-  }
-
-  .floating-buttons a{
-    width:35px;
-    height:35px;
-    font-size:14px;
-  }
-     .services-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-header h2{
-        font-size:26px;
-    }
-
-    .service-content h3{
-        font-size:18px;
-    }
-
-    .service-content p{
-        font-size:13px;
-    }
-
-        .why-section{
-        flex-direction:column;
-    }
-
-    .why-right{
-        grid-template-columns:1fr;
-    }
-
-    .why-left h2{
-        font-size:28px;
-    }
-
-    .cta-overlay h2{
-        font-size:28px;
-    }
-
-    .cta-overlay p{
-        font-size:14px;
-        padding:0 15px;
-    }
-
-    .cta-btn{
-        width:90%;
-    }
-     .reach-grid,
-    .review-grid,
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-grid img{
-        height:180px;
-    }
-       .contact-section{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .form-row{
-        flex-direction:column;
-    }
-
-    .contact-left h2,
-    .contact-right h2{
-        font-size:20px;
-    }
-    
-
-    .faq-container summary{
-        font-size:13px;
-    }
-
-    .faq-container p{
-        font-size:11px;
-    }
-
-    .contact-card h3{
-        font-size:14px;
-    }
-
-    .contact-card p{
-        font-size:11px;
-    }
-
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea{
-        font-size:11px;
-        padding:10px;
-    }
-
-    .booking-form button{
-        font-size:12px;
-    }
-    
-.footer-container{
-    grid-template-columns:1fr;
-    gap:20px;
-    padding:25px 15px;
-    text-align:center;
-}
-
-.footer-about img{
-    width:100px;
-    margin:auto;
-}
-
-.footer-services h3,
-.footer-contact h3{
-    font-size:20px;
-}
-
-.footer-about p,
-.footer-contact p,
-.footer-services li{
-    font-size:13px;
-}
-
-.footer-bottom{
-    font-size:11px;
-    padding:10px;
-}
-
-/* ================= FLOATING BUTTONS ================= */
-
-.floating-buttons{
-    left:8px;
-    bottom:10px;
-}
-
-.floating-buttons a{
-    width:45px;
-    height:45px;
-    font-size:18px;
-}
-}
-
-
-
 }
