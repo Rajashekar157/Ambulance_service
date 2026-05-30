@@ -1,0 +1,322 @@
+/* =======================
+   ABOUT BANNER
+======================= */
+
+.about-banner{
+    height:220px;
+
+    background:
+    linear-gradient(
+    rgba(0,43,82,.75),
+    rgba(0,43,82,.75)),
+    url("https://images.unsplash.com/photo-1587745416684-47953f16f02f");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.about-banner-overlay{
+    text-align:center;
+    color:#fff;
+}
+
+.about-banner h1{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.breadcrumb{
+    display:inline-block;
+    background:rgba(255,255,255,.12);
+    padding:8px 18px;
+    border-radius:6px;
+    font-size:13px;
+}
+
+.breadcrumb span{
+    color:#ff5c35;
+}
+
+/* =======================
+   ABOUT PAGE
+======================= */
+
+.about-page{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 4%;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* LEFT SIDE */
+
+.about-left h2{
+    font-size:28px;
+    color:#0f172a;
+    margin-bottom:18px;
+}
+
+.about-left img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:18px;
+}
+
+.about-left p{
+    font-size:15px;
+    line-height:1.8;
+    color:#64748b;
+    margin-bottom:15px;
+}
+
+.about-left h3{
+    font-size:22px;
+    color:#0f172a;
+    margin:25px 0 15px;
+}
+
+.about-left ul{
+    padding-left:20px;
+}
+
+.about-left li{
+    font-size:15px;
+    color:#64748b;
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+/* =======================
+   SERVICE BOX
+======================= */
+
+.service-box{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
+}
+
+.service-box h3{
+    font-size:22px;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.service-box div{
+    background:#f8fafc;
+    padding:12px 15px;
+    border-radius:8px;
+    margin-bottom:10px;
+    font-size:14px;
+    color:#334155;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.banner-text{
+    max-width:700px;
+    margin:15px auto 0;
+    font-size:15px;
+    line-height:1.8;
+    color:#f1f5f9;
+}
+.service-box div:hover{
+    background:#eef4f9;
+}
+
+/* =======================
+   HELPLINE BOX
+======================= */
+
+.helpline-box{
+    margin-top:20px;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(
+    rgba(0,43,82,.90),
+    rgba(0,43,82,.90)),
+    url("https://images.unsplash.com/photo-1587745416684-47953f16f02f");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.helpline-box h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.helpline-box p{
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.helpline-box h2{
+    font-size:30px;
+    color:#ff5c35;
+    margin-bottom:15px;
+}
+
+.helpline-box button{
+    width:100%;
+    border:none;
+    background:#ff5c35;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media(max-width:768px){
+
+.about-banner{
+    height:160px;
+}
+
+.about-banner h1{
+    font-size:26px;
+}
+
+.breadcrumb{
+    font-size:11px;
+    padding:6px 12px;
+}
+
+.about-page{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:25px 15px;
+}
+
+.about-left h2{
+    font-size:22px;
+}
+
+.about-left p{
+    font-size:13px;
+}
+
+.about-left h3{
+    font-size:18px;
+}
+
+.about-left li{
+    font-size:13px;
+}
+
+.service-box{
+    padding:15px;
+}
+
+.service-box h3{
+    font-size:18px;
+}
+
+.service-box div{
+    font-size:13px;
+    padding:10px;
+}
+
+.helpline-box{
+    padding:20px;
+}
+
+.helpline-box h3{
+    font-size:20px;
+}
+
+.helpline-box p{
+    font-size:13px;
+}
+
+.helpline-box h2{
+    font-size:24px;
+}
+
+.helpline-box button{
+    font-size:13px;
+    padding:10px;
+}
+
+.about-left img{
+    border-radius:10px;
+}
+}
+
+/* EXTRA SMALL MOBILE */
+
+@media(max-width:320px){
+
+.about-banner{
+    height:120px;
+}
+
+.about-banner h1{
+    font-size:20px;
+}
+
+.breadcrumb{
+    font-size:10px;
+    padding:5px 10px;
+}
+
+.about-left h2{
+    font-size:18px;
+}
+
+.about-left p,
+.about-left li{
+    font-size:11px;
+    line-height:1.7;
+}
+
+.about-left h3{
+    font-size:16px;
+}
+
+.service-box h3{
+    font-size:16px;
+}
+
+.service-box div{
+    font-size:11px;
+    padding:8px;
+}
+
+.helpline-box h3{
+    font-size:16px;
+}
+
+.helpline-box p{
+    font-size:11px;
+}
+
+.helpline-box h2{
+    font-size:20px;
+}
+
+.helpline-box button{
+    font-size:11px;
+    padding:8px;
+}
+}
