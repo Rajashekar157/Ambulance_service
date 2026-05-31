@@ -1,21 +1,13 @@
-/* Banner */
-
 .standby-banner{
     height:320px;
 
-    background:
-    linear-gradient(
-    rgba(0,43,82,.75),
-    rgba(0,43,82,.75)
-    ),
-    url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d");
-
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
+
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;
 }
-
 /* Main */
 
 .standby-container{
@@ -117,7 +109,6 @@
     border-radius:10px;
     margin-bottom:12px;
 }
-
 .emergency-box{
     margin-top:25px;
     padding:35px;
@@ -125,14 +116,9 @@
     border-radius:20px;
     color:white;
 
-    background:
-    linear-gradient(
-    rgba(0,43,82,.92),
-    rgba(0,43,82,.92)
-    ),
-    url("https://images.unsplash.com/photo-1587745416684-47953f16f02f");
-
     background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .emergency-box h3{

@@ -15,19 +15,29 @@ export default function ContactUs() {
 
       {/* Banner */}
 
-      <section className="contact-banner">
-        <div className="contact-banner-overlay">
+   <section
+  className="contact-banner"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(0,43,82,.80),
+        rgba(0,43,82,.80)
+      ),
+      url('/assets/aboutus2.jpg')
+    `
+  }}
+>
+  <div className="contact-banner-overlay">
 
-          <h1>Contact Us</h1>
+    <h1>Contact Us</h1>
 
-          <p className="banner-text">
-            Available 24/7 for ambulance booking, emergency response,
-            patient transport, freezer box service and medical equipment support.
-          </p>
+    <p className="banner-text">
+      Available 24/7 for ambulance booking, emergency response,
+      patient transport, freezer box service and medical equipment support.
+    </p>
 
-        </div>
-      </section>
-
+  </div>
+</section>
       {/* Contact Section */}
 
       <section className="contact-page">

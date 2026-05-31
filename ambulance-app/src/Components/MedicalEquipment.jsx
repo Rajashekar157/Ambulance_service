@@ -8,15 +8,27 @@ export default function MedicalEquipment() {
       <Header />
 
       {/* Hero */}
-      <section className="equipment-hero">
-        <div className="equipment-overlay">
-          <h1>Medical Equipment Rental Services</h1>
-          <p>
-            Quality medical equipment available for home care, hospitals,
-            recovery support and emergency requirements.
-          </p>
-        </div>
-      </section>
+      <section
+  className="equipment-hero"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(15,23,42,.80),
+        rgba(15,23,42,.80)
+      ),
+      url('/assets/image7.jpg')
+    `
+  }}
+>
+  <div className="equipment-overlay">
+    <h1>Medical Equipment Rental Services</h1>
+
+    <p>
+      Quality medical equipment available for home care, hospitals,
+      recovery support and emergency requirements.
+    </p>
+  </div>
+</section>
 
       {/* Intro */}
       <section className="equipment-intro">
@@ -45,7 +57,7 @@ export default function MedicalEquipment() {
 
         <div className="intro-right">
           <img
-            src="https://images.unsplash.com/photo-1584515933487-779824d29309"
+            src="assets/image7.jpg"
             alt=""
           />
         </div>

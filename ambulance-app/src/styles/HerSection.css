@@ -105,30 +105,40 @@ body {
 
 /* HERO */
 
-.hero {
-  position: relative;
-  min-height: 420px;
 
-  background:
-    linear-gradient(
-      rgba(15, 23, 42, 0.82),
-      rgba(15, 23, 42, 0.82)
-    ),
-    url("https://images.unsplash.com/photo-1587745416684-47953f16f02f");
 
-  background-size: cover;
-  background-position: center;
+.hero{
+    position:relative;
+    min-height:420px;
+    overflow:hidden;
 }
 
-.overlay {
-  display: none;
+.hero-bg-image{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    z-index:1;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 10;
-  color: white;
-  padding: 35px 50px;
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(15,23,42,.82);
+
+    z-index:2;
+}
+
+.hero-content{
+    position:relative;
+    z-index:3;
+    color:white;
+    padding:35px 50px;
 }
 
 .tag {
@@ -171,11 +181,25 @@ body {
   cursor: pointer;
 }
 
-.call-btn {
-  background: #ff5c35;
-  color: white;
-  border: none;
+.call-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+
+    background:#ff5c35;
+    color:white;
+
+    text-decoration:none;
+    border:none;
+
+    padding:12px 20px;
+    border-radius:30px;
+
+    cursor:pointer;
 }
+
+
 
 .book-btn {
   background: transparent;
@@ -184,6 +208,16 @@ body {
 }
 
 /* HELPLINE CARD */
+.help-btn {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+}
 
 .helpline-card {
   margin-top: 20px;
@@ -238,9 +272,6 @@ body {
   font-size: 12px;
   cursor: pointer;
 }
-
-/* FLOATING BUTTONS */
-
 .floating-buttons {
   position: fixed;
   left: 15px;
@@ -276,6 +307,9 @@ body {
 .floating-buttons a:last-child {
   background: #ff5c35;
 }
+
+
+
 
 /* ABOUT SECTION */
 
@@ -330,8 +364,6 @@ body {
     text-align:center;
 }
 
-/* RIGHT CONTENT */
-
 .about-content{
     flex:1;
 }
@@ -364,8 +396,6 @@ body {
     margin-bottom:18px;
 }
 
-/* FEATURES */
-
 .features{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -380,8 +410,6 @@ body {
 }
 
 /* SERVICES SECTION */
-/* Services Dropdown */
-
 .services-menu{
     position:relative;
 }
@@ -436,8 +464,6 @@ body {
     color:#ff5c35;
     padding-left:25px;
 }
-/* SERVICES SECTION */
-
 .services-section{
     padding:45px 4%;
     background:#f8fafc;
@@ -517,7 +543,6 @@ body {
 }
 
 /* WHY SECTION */
-
 .why-section{
     padding:45px 4%;
     display:flex;
@@ -613,52 +638,92 @@ body {
 /* CTA SECTION */
 
 .cta-section{
-    margin-top:20px;
-    height:220px;
-
-    background:
-    linear-gradient(
-      rgba(15,60,104,.88),
-      rgba(15,60,104,.88)),
-    url("https://images.unsplash.com/photo-1587745416684-47953f16f02f");
-
-    background-size:cover;
-    background-position:center;
+    position:relative;
+    height:320px;
+    overflow:hidden;
 
     display:flex;
     justify-content:center;
     align-items:center;
+
+    border-radius:20px;
+    margin:30px 20px;
+}
+
+.cta-bg-image{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.cta-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        rgba(15,60,104,.85),
+        rgba(15,60,104,.90)
+    );
+
+    z-index:1;
 }
 
 .cta-overlay{
+    position:relative;
+    z-index:2;
+
     text-align:center;
     color:white;
-    padding:0 20px;
+
+    max-width:800px;
+    padding:20px;
 }
 
 .cta-overlay h2{
-    font-size:26px;
-    margin-bottom:10px;
+    font-size:42px;
+    font-weight:700;
+    line-height:1.3;
+    margin-bottom:15px;
 }
 
 .cta-overlay p{
-    font-size:13px;
-    max-width:600px;
-    margin:auto;
-    line-height:1.7;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:25px;
+    opacity:.95;
 }
 
 .cta-btn{
-    margin-top:15px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    text-decoration:none;
+
     background:#ff5c35;
     color:white;
-    border:none;
-    padding:10px 22px;
-    border-radius:6px;
-    font-size:13px;
-    cursor:pointer;
+
+    padding:15px 32px;
+
+    border-radius:50px;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.3s;
 }
 
+.cta-btn:hover{
+    background:#ff784f;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(255,92,53,.35);
+}
 /* REACH */
 
 .reach-section{
@@ -834,24 +899,65 @@ body {
 }
 
 .contact-card{
-    background:#fff;
-    margin-top:15px;
-    padding:15px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.06);
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#ffffff;
+
+    padding:18px 20px;
+
+    border-radius:14px;
+
+    margin-bottom:16px;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+
+    transition:.3s;
 }
 
-.contact-card h3{
-    margin-bottom:8px;
+.contact-card:hover{
+    transform:translateY(-3px);
+}
+
+.contact-icon{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#ff5c35;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+
+    flex-shrink:0;
+}
+
+.contact-details h3{
+    margin:0 0 6px;
+    font-size:20px;
     color:#0f172a;
-    font-size:16px;
 }
 
-.contact-card p{
-    font-size:12px;
-    line-height:1.6;
+.contact-details p{
+    margin:0;
+    font-size:15px;
+    color:#475569;
 }
 
+.contact-details span{
+    display:block;
+    margin-top:5px;
+    font-size:13px;
+    color:#94a3b8;
+}
 .contact-right{
     flex:1;
     background:#fff;
@@ -1306,6 +1412,7 @@ body {
 
 /* CONTACT */
 
+
 .contact-section{
     flex-direction:column;
 }
@@ -1518,6 +1625,8 @@ body {
 }
 
 /* CONTACT */
+
+
 
 .contact-left h2,
 .contact-right h2{

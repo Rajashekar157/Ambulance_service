@@ -8,16 +8,22 @@ export default function AmbulanceWithFreezer() {
       <Header />
 
       {/* Banner */}
-      <section className="freezer-banner">
-        <div className="freezer-overlay">
-          {/* <h1>Freezer Ambulance Service</h1>
-          <p>
-            Safe, dignified and temperature-controlled transportation services
-            available 24/7 across Hyderabad and Telangana.
-          </p> */}
-        </div>
-      </section>
-
+    <section
+  className="freezer-banner"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.25)
+      ),
+      url('/assets/image5.jpg')
+    `
+  }}
+>
+  <div className="freezer-overlay">
+    {/* Content */}
+  </div>
+</section>
       {/* Main Content */}
       <section className="freezer-container">
 
@@ -30,7 +36,7 @@ export default function AmbulanceWithFreezer() {
           <h2>Professional Mortuary & Freezer Ambulance Solutions</h2>
 
           <img
-            src="https://images.unsplash.com/photo-1587745416684-47953f16f02f"
+            src="assets/image1.jpg"
             alt="Freezer Ambulance"
           />
 
@@ -122,20 +128,35 @@ export default function AmbulanceWithFreezer() {
             </div>
           </div>
 
-          <div className="help-box">
-            <h3>Need Immediate Assistance?</h3>
+        <div
+  className="help-box"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(8,48,84,.92),
+        rgba(8,48,84,.92)
+      ),
+      url('/assets/image6.jpg')
+    `
+  }}
+>
+  <h3>Need Immediate Assistance?</h3>
 
-            <p>
-              Our coordination team is available round the clock to arrange
-              freezer ambulance transportation quickly and efficiently.
-            </p>
+  <p>
+    Our coordination team is available round the clock to arrange
+    freezer ambulance transportation quickly and efficiently.
+  </p>
 
-            <h2>08125078218</h2>
+  <h2>8247582810</h2>
 
-            <button>Call Now</button>
-          </div>
+  <a
+    href="tel:+918247582810"
+    className="call-now-btn"
+  >
+    Call Now
+  </a>
 
-        </div>
+</div>        </div>
 
       </section>
 

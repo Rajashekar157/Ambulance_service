@@ -8,7 +8,18 @@ export default function StandbyAmbulance() {
       <Header />
 
       {/* Banner */}
-      <section className="standby-banner"></section>
+      <section
+  className="standby-banner"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(15,60,104,.75),
+        rgba(15,60,104,.75)
+      ),
+      url('/assets/fleet3.jpg')
+    `
+  }}
+></section>
 
       {/* Content */}
       <section className="standby-container">
@@ -22,7 +33,7 @@ export default function StandbyAmbulance() {
           <h2>Professional Standby Ambulance Services</h2>
 
           <img
-            src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a41"
+            src="assets/fleet3.jpg"
             alt="Standby Ambulance"
           />
 
@@ -98,19 +109,34 @@ export default function StandbyAmbulance() {
             <div>✓ VIP Events</div>
           </div>
 
-          <div className="emergency-box">
-            <h3>Book Ambulance Standby</h3>
+        <div
+  className="emergency-box"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(0,43,82,.92),
+        rgba(0,43,82,.92)
+      ),
+      url('/assets/image6.jpg')
+    `
+  }}
+>
+  <h3>Need Immediate Assistance?</h3>
 
-            <p>
-              Reserve an ambulance with trained staff for your event or
-              workplace.
-            </p>
+  <p>
+    Our ambulance team is available 24/7 for emergency
+    transportation and medical support.
+  </p>
 
-            <h2>08125078218</h2>
+  <h2>8247582810</h2>
 
-            <button>Call Now</button>
-          </div>
-
+  <a
+    href="tel:+918247582810"
+    className="call-now-btn"
+  >
+    Call Now
+  </a>
+</div>
         </div>
 
       </section>

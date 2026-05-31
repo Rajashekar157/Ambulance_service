@@ -7,23 +7,34 @@ export default function BodyFreezerService() {
     <>
       <Header />
 
-      {/* Hero Banner */}
-      <section className="freezer-hero">
-        <div className="hero-content">
-          <h1>Body Freezer Service</h1>
-          <p>
-            Safe and hygienic body freezer box rental services available
-            24/7 across Hyderabad and surrounding areas.
-          </p>
-        </div>
-      </section>
+<section
+  className="freezer-hero"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(15,23,42,.75),
+        rgba(15,23,42,.75)
+      ),
+      url('/assets/image8.jpg')
+    `
+  }}
+>
+  <div className="hero-content">
+    <h1>Body Freezer Service</h1>
+
+    <p>
+      Safe and hygienic body freezer box rental services available
+      24/7 across Hyderabad and surrounding areas.
+    </p>
+  </div>
+</section>
 
       {/* Main Section */}
       <section className="freezer-service">
 
         <div className="freezer-image">
           <img
-            src="https://images.unsplash.com/photo-1584515933487-779824d29309"
+            src="assets/image8.jpg"
             alt="Body Freezer"
           />
         </div>

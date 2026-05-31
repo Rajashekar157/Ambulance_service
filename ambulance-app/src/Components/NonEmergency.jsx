@@ -8,16 +8,22 @@ export default function NonEmergency() {
       <Header />
 
       {/* Banner */}
-      <section className="service-banner">
-        <div className="service-overlay">
-          {/* <h1>Non Emergency Ambulance</h1>
-          <p>
-            Safe, comfortable and scheduled patient transportation services
-            across Hyderabad.
-          </p> */}
-        </div>
-      </section>
-
+    <section
+  className="service-banner"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(15,60,104,.75),
+        rgba(15,60,104,.75)
+      ),
+      url('/assets/image1.jpg')
+    `
+  }}
+>
+  <div className="service-overlay">
+    {/* Content */}
+  </div>
+</section>
       {/* Content */}
       <section className="service-page">
 
@@ -25,7 +31,7 @@ export default function NonEmergency() {
 
           <div className="service-image-card">
             <img
-              src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a41"
+              src="assets/nonemergency.jpg"
               alt=""
             />
           </div>
@@ -114,18 +120,30 @@ export default function NonEmergency() {
             <a href="/">Body Freezer Service</a>
           </div>
 
-          <div className="call-box">
-            <h3>Need Ambulance?</h3>
+        <div
+  className="call-box"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(15,60,104,.92),
+        rgba(15,60,104,.92)
+      ),
+      url('/assets/image4.jpg')
+    `
+  }}
+>
+  <h3>Need Ambulance?</h3>
 
-            <p>
-              Our dispatch team is available 24/7 for immediate booking.
-            </p>
+  <p>
+    Our dispatch team is available 24/7 for immediate booking.
+  </p>
 
-            <h2>8247582810</h2>
+  <h2>8247582810</h2>
 
-            <button>Call Now</button>
-          </div>
-
+  <a href="tel:+918247582810" className="call-now-btn">
+    Call Now
+  </a>
+</div>
         </div>
 
       </section>

@@ -4,104 +4,123 @@ import "../styles/AboutUs.css";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export default function AboutUs() {
-  return (
-    <>
-      <Header />
+    return (
+        <>
+            <Header />
 
-      {/* Banner */}
-      <section className="about-banner">
-  <div className="about-banner-overlay">
+            {/* Banner */}
+            <section className="about-banner">
 
-    <h1>About RR Ambulance Services</h1>
+                <img
+                    src="/assets/aboutus2.jpg"
+                    alt="About Banner"
+                    className="about-banner-img"
+                />
 
-    <p className="banner-text">
-      Providing fast, reliable and 24/7 emergency ambulance
-      services across Hyderabad with trained medical staff,
-      ICU support and advanced life-saving equipment.
-    </p>
+                <div className="about-banner-overlay">
+                    <h1>About RR Ambulance Services</h1>
 
-  </div>
-</section>
+                    <p className="banner-text">
+                        Providing fast, reliable and 24/7 emergency ambulance
+                        services across Hyderabad with trained medical staff,
+                        ICU support and advanced life-saving equipment.
+                    </p>
+                </div>
 
-      {/* Main Content */}
-      <section className="about-page">
+            </section>
 
-        <div className="about-left">
+            {/* Main Content */}
+            <section className="about-page">
 
-          <h2>Welcome to RR Ambulance Services</h2>
+                <div className="about-left">
 
-          <img
-            src="https://images.unsplash.com/photo-1587745416684-47953f16f02f"
-            alt=""
-          />
+                    <h2>Welcome to RR Ambulance Services</h2>
 
-          <p>
-            RR Ambulance Services is a trusted healthcare transportation
-            provider headquartered in Hyderabad. Guided by experienced
-            medical professionals, we deliver emergency and
-            non-emergency ambulance support across the city.
-          </p>
+                    <img
+                        src="assets/aboutus.jpg"
+                        alt=""
+                    />
 
-          <p>
-            Our fleet comprises Basic Life Support (BLS) and Advanced
-            Life Support (ALS) ambulances equipped with oxygen support,
-            ventilators, cardiac monitors and trained medical staff.
-          </p>
+                    <p>
+                        RR Ambulance Services is a trusted healthcare transportation
+                        provider headquartered in Hyderabad. Guided by experienced
+                        medical professionals, we deliver emergency and
+                        non-emergency ambulance support across the city.
+                    </p>
 
-          <h3>Our Network & Care System</h3>
+                    <p>
+                        Our fleet comprises Basic Life Support (BLS) and Advanced
+                        Life Support (ALS) ambulances equipped with oxygen support,
+                        ventilators, cardiac monitors and trained medical staff.
+                    </p>
 
-          <ul>
-            <li>NIMS Hospital</li>
-            <li>Osmania General Hospital</li>
-            <li>Apollo Hospitals</li>
-            <li>AIG Hospitals</li>
-            <li>CARE Hospitals</li>
-            <li>Continental Hospitals</li>
-          </ul>
+                    <h3>Our Network & Care System</h3>
 
-          <h3>Experienced Paramedical Staff & Drivers</h3>
+                    <ul>
+                        <li>NIMS Hospital</li>
+                        <li>Osmania General Hospital</li>
+                        <li>Apollo Hospitals</li>
+                        <li>AIG Hospitals</li>
+                        <li>CARE Hospitals</li>
+                        <li>Continental Hospitals</li>
+                    </ul>
 
-          <p>
-            Every ambulance is operated by certified paramedics and
-            experienced drivers trained in emergency response,
-            cardiovascular support and critical care transportation.
-          </p>
+                    <h3>Experienced Paramedical Staff & Drivers</h3>
 
-        </div>
+                    <p>
+                        Every ambulance is operated by certified paramedics and
+                        experienced drivers trained in emergency response,
+                        cardiovascular support and critical care transportation.
+                    </p>
 
-        <div className="about-right">
+                </div>
 
-          <div className="service-box">
-            <h3>Our Services</h3>
+                <div className="about-right">
 
-            <div>Non Emergency Ambulance</div>
-            <div>Ambulance with Freezer</div>
-            <div>Standby Ambulance</div>
-            <div>Road Ambulance</div>
-            <div>Medical Equipment</div>
-            <div>Body Freezer Service</div>
-          </div>
+                    <div className="service-box">
+                        <h3>Our Services</h3>
 
-          <div className="helpline-box">
-            <h3>Need Helpline?</h3>
+                        <div>Non Emergency Ambulance</div>
+                        <div>Ambulance with Freezer</div>
+                        <div>Standby Ambulance</div>
+                        <div>Road Ambulance</div>
+                        <div>Medical Equipment</div>
+                        <div>Body Freezer Service</div>
+                    </div>
 
-            <p>
-              We are available 24/7 to dispatch ambulances
-              anywhere in Hyderabad.
-            </p>
+                    <div
+                        className="helpline-box"
+                        style={{
+                            backgroundImage: `
+      linear-gradient(
+        rgba(0,43,82,.90),
+        rgba(0,43,82,.90)
+      ),
+      url('/assets/image4.jpg')
+    `
+                        }}
+                    >
+                        <h3>Need Helpline?</h3>
 
-            <h2>8247582810</h2>
+                        <p>
+                            We are available 24/7 to dispatch ambulances
+                            anywhere in Hyderabad.
+                        </p>
 
-            <button>
-              <FaPhoneAlt /> Call Now
-            </button>
-          </div>
+                        <h2>8247582810</h2>
 
-        </div>
+                        <a
+                            href="tel:+918247582810"
+                            className="helpline-btn"
+                        >
+                            <FaPhoneAlt /> Call Now
+                        </a>
+                    </div>
+                </div>
 
-      </section>
+            </section>
 
-      <Footer />
-    </>
-  );
+            <Footer />
+        </>
+    );
 }

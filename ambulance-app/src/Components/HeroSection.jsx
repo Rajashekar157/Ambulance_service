@@ -1,29 +1,28 @@
-// import { useState } from "react";
 import "../styles/HerSection.css";
-// import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import {
     FaPhoneAlt,
     FaWhatsapp,
-    // FaEnvelope,
-    // FaMapMarkerAlt,
     FaCalendarAlt,
     FaAmbulance,
-    // FaBars
 } from "react-icons/fa";
 
 export default function HeroSection() {
-    // const [menuOpen, setMenuOpen] = useState(false);
     return (
         <>
             <Header />
-            {/* Hero Section */}
             <section className="hero">
+
+                <img
+                    src="/assets/image1.jpg"
+                    alt="Ambulance"
+                    className="hero-bg-image"
+                />
+
                 <div className="overlay"></div>
 
                 <div className="hero-content">
-
                     <h1>
                         24/7 Emergency <br />
                         Ambulance Services in Hyderabad
@@ -37,7 +36,9 @@ export default function HeroSection() {
 
                     <div className="hero-buttons">
                         <button className="call-btn">
-                            <FaPhoneAlt /> Call Now: 08247582810
+                            <a href="tel:+918247582810" className="call-btn">
+                                <FaPhoneAlt /> Call Now: 8247582810
+                            </a>
                         </button>
 
                         <button className="book-btn">
@@ -59,22 +60,35 @@ export default function HeroSection() {
                         </div>
 
                         <button className="help-btn">
-                            <FaPhoneAlt /> Call: 08247582810
+                            <a href="tel:+918247582810" className="help-btn">
+                                <FaPhoneAlt /> Call Now: 8247582810
+                            </a>
                         </button>
                     </div>
                 </div>
 
                 {/* Floating Buttons */}
                 <div className="floating-buttons">
-                    <a href="/">
+
+                    {/* WhatsApp */}
+                    <a
+                        href="https://wa.me/918247582810"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <FaWhatsapp />
                     </a>
 
-                    <a href="/">
+                    {/* Phone Call */}
+                    <a href="tel:+918247582810">
                         <FaPhoneAlt />
                     </a>
+
                 </div>
             </section>
+
+
+
 
             {/* ABOUT SECTION */}
 
@@ -83,8 +97,8 @@ export default function HeroSection() {
                 <div className="about-image">
 
                     <img
-                        src="https://images.unsplash.com/photo-1587745416684-47953f16f02f"
-                        alt="Ambulance"
+                        src="/assets/image2.jpg"
+                        alt="RR Ambulance Service"
                     />
 
                     <div className="experience-box">
@@ -142,20 +156,17 @@ export default function HeroSection() {
 
             </section>
 
+
+
+
             {/* SERVICES SECTION */}
 
             <section className="services-section">
 
-                <div className="section-header">
-                    <span>WHAT WE DO</span>
-                    <h2>Our Specialized Ambulance Services</h2>
-                    <div className="service-line"></div>
-                </div>
-
                 <div className="services-grid">
 
                     <div className="service-card">
-                        <img src="https://images.unsplash.com/photo-1587745416684-47953f16f02f" alt="" />
+                        <img src="/assets/image3.jpg" alt="Non Emergency Ambulance" />
                         <div className="service-content">
                             <h3>Non Emergency Ambulance</h3>
                             <p>
@@ -167,7 +178,7 @@ export default function HeroSection() {
                     </div>
 
                     <div className="service-card">
-                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907" alt="" />
+                        <img src="/assets/image4.jpg" alt="Ambulance With Freezer" />
                         <div className="service-content">
                             <h3>Ambulance With Freezer</h3>
                             <p>
@@ -179,7 +190,7 @@ export default function HeroSection() {
                     </div>
 
                     <div className="service-card">
-                        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b" alt="" />
+                        <img src="/assets/image5.jpg" alt="Standby Ambulance" />
                         <div className="service-content">
                             <h3>Standby Ambulance</h3>
                             <p>
@@ -191,7 +202,7 @@ export default function HeroSection() {
                     </div>
 
                     <div className="service-card">
-                        <img src="https://images.unsplash.com/photo-1587745416684-47953f16f02f" alt="" />
+                        <img src="/assets/image6.jpg" alt="Road Ambulance" />
                         <div className="service-content">
                             <h3>Road Ambulance</h3>
                             <p>
@@ -203,7 +214,7 @@ export default function HeroSection() {
                     </div>
 
                     <div className="service-card">
-                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" alt="" />
+                        <img src="/assets/image7.jpg" alt="Medical Equipment" />
                         <div className="service-content">
                             <h3>Medical Equipment</h3>
                             <p>
@@ -215,7 +226,7 @@ export default function HeroSection() {
                     </div>
 
                     <div className="service-card">
-                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" alt="" />
+                        <img src="/assets/image8.jpg" alt="Body Freezer Service" />
                         <div className="service-content">
                             <h3>Body Freezer Service</h3>
                             <p>
@@ -229,6 +240,10 @@ export default function HeroSection() {
                 </div>
 
             </section>
+
+
+
+
 
             {/* WHY CHOOSE US */}
 
@@ -303,29 +318,36 @@ export default function HeroSection() {
                 </div>
 
             </section>
-            {/* EMERGENCY CTA */}
 
-            <section className="cta-section">
 
-                <div className="cta-overlay">
 
-                    <h2>
-                        Need Urgent Assistance? We are Ready 24/7
-                    </h2>
 
-                    <p>
-                        Our dedicated ambulance coordinators and medical staff
-                        are available 24 hours a day, 365 days a year.
-                    </p>
+           <section className="cta-section">
 
-                    <button className="cta-btn">
-                        <FaPhoneAlt /> Call Helpline Now: 8247582810
-                    </button>
+    <img
+        src="/assets/neeurgentimage.jpg"
+        alt="Emergency Ambulance"
+        className="cta-bg-image"
+    />
 
-                </div>
+    <div className="cta-overlay">
 
-            </section>
+        <h2>
+            Need Urgent Assistance? We are Ready 24/7
+        </h2>
 
+        <p>
+            Our dedicated ambulance coordinators and medical staff
+            are available 24 hours a day, 365 days a year.
+        </p>
+
+        <button className="cta-btn">
+            <FaPhoneAlt /> Call Helpline Now: 8247582810
+        </button>
+
+    </div>
+
+</section>
             {/* REACH SECTION */}
 
             <section className="reach-section">
@@ -430,50 +452,51 @@ export default function HeroSection() {
                 </div>
 
             </section>
-            {/* GALLERY SECTION */}
+          {/* GALLERY SECTION */}
 
-            <section className="gallery-section">
+<section className="gallery-section">
 
-                <div className="section-header">
-                    <span>PHOTOS</span>
-                    <h2>Our Ambulance Fleet Gallery</h2>
-                    <div className="service-line"></div>
-                </div>
+    <div className="section-header">
+        <span>PHOTOS</span>
+        <h2>Our Ambulance Fleet Gallery</h2>
+        <div className="service-line"></div>
+    </div>
 
-                <div className="gallery-grid">
+    <div className="gallery-grid">
 
-                    <img
-                        src="https://images.unsplash.com/photo-1587745416684-47953f16f02f"
-                        alt=""
-                    />
+        <img
+            src="/assets/fleet1.jpg"
+            alt="RR Ambulance Fleet 1"
+        />
 
-                    <img
-                        src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b"
-                        alt=""
-                    />
+        <img
+            src="/assets/fleet2.jpg"
+            alt="RR Ambulance Fleet 2"
+        />
 
-                    <img
-                        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118"
-                        alt=""
-                    />
+        <img
+            src="/assets/fleet3.jpg"
+            alt="RR Ambulance Fleet 3"
+        />
 
-                    <img
-                        src="https://images.unsplash.com/photo-1584515933487-779824d29309"
-                        alt=""
-                    />
+        <img
+            src="/assets/fleet4.jpg"
+            alt="RR Ambulance Fleet 4"
+        />
 
-                    <img
-                        src="https://images.unsplash.com/photo-1538108149393-fbbd81895907"
-                        alt=""
-                    />
+        <img
+            src="/assets/fleet5.jpg"
+            alt="RR Ambulance Fleet 5"
+        />
 
-                    <img
-                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200"
-                        alt="Healthcare"
-                    />
-                </div>
+        <img
+            src="/assets/fleet6.jpg"
+            alt="RR Ambulance Fleet 6"
+        />
 
-            </section>
+    </div>
+
+</section>
             {/* FAQ SECTION */}
 
             <section className="faq-section">
@@ -558,20 +581,46 @@ export default function HeroSection() {
                     </p>
 
                     <div className="contact-card">
-                        <h3>📞 Phone Number</h3>
-                        <p>+91 82475 82810</p>
-                        <p>24/7 Emergency Hotline</p>
-                    </div>
 
-                    <div className="contact-card">
-                        <h3>✉️ Support Email</h3>
-                        <p>info@rrambulance.com</p>
-                    </div>
+    <div className="contact-icon">
+        📞
+    </div>
 
-                    <div className="contact-card">
-                        <h3>📍 Location Center</h3>
-                        <p>Punjagutta, Hyderabad</p>
-                    </div>
+    <div className="contact-details">
+        <h3>Phone Number</h3>
+        <p>+91 82475 82810</p>
+        <span>24/7 Emergency Hotline</span>
+    </div>
+
+</div>
+
+<div className="contact-card">
+
+    <div className="contact-icon">
+        ✉️
+    </div>
+
+    <div className="contact-details">
+        <h3>Support Email</h3>
+        <p>info@rrambulance.com</p>
+        <span>Customer Support</span>
+    </div>
+
+</div>
+
+<div className="contact-card">
+
+    <div className="contact-icon">
+        📍
+    </div>
+
+    <div className="contact-details">
+        <h3>Location Center</h3>
+        <p>Punjagutta, Hyderabad</p>
+        <span>Available 24 Hours</span>
+    </div>
+
+</div>
 
                 </div>
 

@@ -2,13 +2,6 @@
     height:280px;
     margin-top: 5px;
 
-    background:
-    linear-gradient(
-      rgba(15,60,104,.75),
-      rgba(15,60,104,.75)
-    ),
-    url("https://images.unsplash.com/photo-1584515933487-779824d29309");
-
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -142,7 +135,6 @@
     background:#0f3c68;
     color:#fff;
 }
-
 .call-box{
     margin-top:25px;
     padding:30px;
@@ -150,12 +142,9 @@
     border-radius:16px;
     color:#fff;
 
-    background:
-    linear-gradient(rgba(15,60,104,.92),
-    rgba(15,60,104,.92)),
-    url("https://images.unsplash.com/photo-1587745416684-47953f16f02f");
-
     background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .call-box h3{

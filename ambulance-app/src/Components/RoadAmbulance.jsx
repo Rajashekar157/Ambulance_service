@@ -8,12 +8,23 @@ export default function RoadAmbulance() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="road-banner">
-        <div className="road-overlay">
-          <span>24/7 Emergency Response</span>
-          <h1>Road Ambulance Service</h1>
-        </div>
-      </section>
+      <section
+  className="road-banner"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(2,33,62,.70),
+        rgba(2,33,62,.70)
+      ),
+      url('/assets/fleet2.jpg')
+    `
+  }}
+>
+  <div className="road-overlay">
+    <span>24/7 Emergency Response</span>
+    <h1>Road Ambulance Service</h1>
+  </div>
+</section>
 
       {/* Intro */}
       <section className="road-intro">
@@ -37,7 +48,7 @@ export default function RoadAmbulance() {
 
         <div className="road-image">
           <img
-            src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb"
+            src="assets/fleet3.jpg"
             alt=""
           />
         </div>
