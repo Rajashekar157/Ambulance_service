@@ -158,7 +158,10 @@ export default function MedicalEquipment() {
 
           <h3>+91 8247582810</h3>
 
-          <button>Call Now</button>
+            <a href="tel:+918247582810">
+    <button>Call Now</button>
+  </a>
+
 
         </div>
 
