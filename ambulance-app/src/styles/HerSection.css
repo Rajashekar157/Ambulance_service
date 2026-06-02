@@ -1414,6 +1414,7 @@ body {
   .footer-contact h3 {
     font-size: 20px;
   }
+  
 
   .footer-services a {
     font-size: 14px;
@@ -1529,6 +1530,20 @@ body {
     padding:25px 15px;
     text-align:center;
 }
+  .hero-buttons {
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-buttons a,
+  .hero-buttons button {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
 
 .tag{
     font-size:11px;
@@ -1619,6 +1634,37 @@ body {
 .about-content{
     text-align:center;
 }
+ .nav-links.active{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+  }
+
+  .services-menu{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .dropdown{
+    position:relative !important;
+    top:0;
+    left:0;
+    width:100%;
+    display:block;
+    background:#f8f8f8;
+    box-shadow:none;
+    margin:0;
+    padding:0;
+  }
+
+  .dropdown li{
+    width:100%;
+  }
+
+  .dropdown li a{
+    display:block;
+    padding:15px 20px;
+  }
 
 .about-tag{
     margin:auto;

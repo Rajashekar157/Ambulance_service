@@ -8,6 +8,7 @@ import AmbulanceWithFreezer from "./Components/AmbulanceWithFreezer";
 import StandbyAmbulance from "./Components/StandbyAmbulance";
 import RoadAmbulance from "./Components/RoadAmbulance";
 import MedicalEquipment from "./Components/MedicalEquipment";
+import Emergency from "./Components/Emergency";
 import BodyFreezerService from "./Components/BodyFreezerService";
 import ScrollToTop from "./Components/ScrollToTop";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HeroSection />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/emergency" element={<Emergency />} />
         <Route path="/non-emergency" element={<NonEmergency />} />
         <Route path="/freezer-ambulance" element={<AmbulanceWithFreezer />} />
         <Route path="/standby-ambulance" element={<StandbyAmbulance />} />

@@ -1,70 +1,212 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/HerSection.css";
-import { FaChevronDown } from "react-icons/fa";
+import "../styles/Header.css";
+
 import {
   FaPhoneAlt,
-  FaBars
+  FaBars,
+  FaTimes,
+  FaChevronDown,
+  FaChevronUp
 } from "react-icons/fa";
 
 export default function Header() {
+
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <>
-      {/* Top Bar */}
-      {/* <h3>Screen Width: {window.innerWidth}px</h3> */}
-      {/* <div className="topbar">
-        <div className="top-left">
-          <span><FaPhoneAlt /> +91 82475 82810</span>
-          <span><FaEnvelope /> info@ambulance.com</span>
-          <span><FaMapMarkerAlt /> Punjagutta, Hyderabad</span>
-        </div>
-      </div> */}
+    <nav className="navbar">
 
-      {/* Navbar */}
-      <nav className="navbar">
+      {/* Logo */}
+
       <Link to="/" className="logo">
-  <img
-    src="./assets/pummy.jpg"
-    alt="Pummy Ambulance Logo"
-  />
-  <h3>PUMMY AMBULANCE SERVICE</h3>
-</Link>
+        <img
+          src="/assets/pummy.jpg"
+          alt="Pummy Ambulance"
+        />
+        <h3>PUMMY AMBULANCE SERVICE</h3>
+      </Link>
 
-        <div className="menu-wrapper">
-          <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li className="services-menu">
-  <Link>  Services <FaChevronDown className="dropdown-icon" /></Link>
+      {/* Menu */}
 
-  <ul className="dropdown">
-    <li><Link to="/non-emergency">Non Emergency Ambulance</Link></li>
-    <li><Link to="/freezer-ambulance">Ambulance with Freezer</Link></li>
-    <li><Link to="/standby-ambulance">Standby Ambulance</Link></li>
-    <li><Link to="/road-ambulance">Road Ambulance</Link></li>
-    <li><Link to="/medical-equipment">Medical Equipment</Link></li>
-    <li><Link to="/body-freezer">Body Freezer Service</Link></li>
-  </ul>
-</li>
-            <li><Link to="/contact">Contact Us</Link></li>
-          </ul>
+      <div className="menu-wrapper">
+
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+
+          <li>
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+            >
+              About Us
+            </Link>
+          </li>
+
+          {/* Services Dropdown */}
+
+          <li className="services-menu">
+
+            <div
+              className="services-title"
+              onClick={() => setServicesOpen(!servicesOpen)}
+            >
+              <span>Services</span>
+
+              {servicesOpen ? (
+                <FaChevronUp />
+              ) : (
+                <FaChevronDown />
+              )}
+            </div>
+
+            {servicesOpen && (
+
+              <ul className="dropdown">
+
+                <li>
+                  <Link
+                    to="/emergency"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Emergency Ambulance
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/non-emergency"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Non Emergency Ambulance
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/freezer-ambulance"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Ambulance with Freezer
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/standby-ambulance"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Standby Ambulance
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/road-ambulance"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Road Ambulance
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/medical-equipment"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Medical Equipment
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/body-freezer"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setServicesOpen(false);
+                    }}
+                  >
+                    Body Freezer Service
+                  </Link>
+                </li>
+
+              </ul>
+
+            )}
+
+          </li>
+
+          <li>
+            <Link
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact Us
+            </Link>
+          </li>
+
+        </ul>
+
+        {/* Mobile Icon */}
+
+        {menuOpen ? (
+
+          <FaTimes
+            className="mobile-menu"
+            onClick={() => setMenuOpen(false)}
+          />
+
+        ) : (
 
           <FaBars
             className="mobile-menu"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen(true)}
           />
+
+        )}
+
+      </div>
+
+      {/* Emergency Call */}
+
+      <div className="emergency">
+
+        <FaPhoneAlt />
+
+        <div>
+          <small>EMERGENCY CALL 24/7</small>
+          <h4>8341408108</h4>
         </div>
 
-        <div className="emergency">
-          <FaPhoneAlt />
-          <div>
-            <small>EMERGENCY CALL 24/7</small>
-            <h4>8341408108</h4>
-          </div>
-        </div>
-      </nav>
-    </>
+      </div>
+
+    </nav>
   );
 }
