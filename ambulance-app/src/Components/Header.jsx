@@ -4,8 +4,6 @@ import "../styles/HerSection.css";
 import { FaChevronDown } from "react-icons/fa";
 import {
   FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
   FaBars
 } from "react-icons/fa";
 

@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import {
     FaPhoneAlt,
-    FaWhatsapp,
     FaCalendarAlt,
     FaAmbulance,
 } from "react-icons/fa";
