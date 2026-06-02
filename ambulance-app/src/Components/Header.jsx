@@ -26,13 +26,13 @@ export default function Header() {
 
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">
-          <img
-            src="./assets/pummy.jpg"
-            alt=""
-          />
-          <h3>PUMMY AMBULANCE SERVICE</h3>
-        </div>
+      <Link to="/" className="logo">
+  <img
+    src="./assets/pummy.jpg"
+    alt="Pummy Ambulance Logo"
+  />
+  <h3>PUMMY AMBULANCE SERVICE</h3>
+</Link>
 
         <div className="menu-wrapper">
           <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
