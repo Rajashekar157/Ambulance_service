@@ -18,7 +18,7 @@ export default function AboutUs() {
                 />
 
                 <div className="about-banner-overlay">
-                    <h1>About RR Ambulance Services</h1>
+                    <h1>About Pummy Ambulance Services</h1>
 
                     <p className="banner-text">
                         Providing fast, reliable and 24/7 emergency ambulance
@@ -34,7 +34,7 @@ export default function AboutUs() {
 
                 <div className="about-left">
 
-                    <h2>Welcome to RR Ambulance Services</h2>
+                    <h2>Welcome to Pummy Ambulance Services</h2>
 
                     <img
                         src="assets/aboutus.jpg"
@@ -42,7 +42,7 @@ export default function AboutUs() {
                     />
 
                     <p>
-                        RR Ambulance Services is a trusted healthcare transportation
+                        Pummy Ambulance Services is a trusted healthcare transportation
                         provider headquartered in Hyderabad. Guided by experienced
                         medical professionals, we deliver emergency and
                         non-emergency ambulance support across the city.
@@ -107,10 +107,10 @@ export default function AboutUs() {
                             anywhere in Hyderabad.
                         </p>
 
-                        <h2>8247582810</h2>
+                        <h2>8341408108</h2>
 
                         <a
-                            href="tel:+918247582810"
+                            href="tel:+918341408108"
                             className="helpline-btn"
                         >
                             <FaPhoneAlt /> Call Now

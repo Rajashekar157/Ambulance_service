@@ -16,22 +16,22 @@ export default function Header() {
     <>
       {/* Top Bar */}
       {/* <h3>Screen Width: {window.innerWidth}px</h3> */}
-      <div className="topbar">
+      {/* <div className="topbar">
         <div className="top-left">
           <span><FaPhoneAlt /> +91 82475 82810</span>
           <span><FaEnvelope /> info@ambulance.com</span>
           <span><FaMapMarkerAlt /> Punjagutta, Hyderabad</span>
         </div>
-      </div>
+      </div> */}
 
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/2967/2967350.png"
+            src="./assets/pummy.jpg"
             alt=""
           />
-          <h3>RR AMBULANCE</h3>
+          <h3>PUMMY AMBULANCE SERVICE</h3>
         </div>
 
         <div className="menu-wrapper">
@@ -63,7 +63,7 @@ export default function Header() {
           <FaPhoneAlt />
           <div>
             <small>EMERGENCY CALL 24/7</small>
-            <h4>8247582810</h4>
+            <h4>8341408108</h4>
           </div>
         </div>
       </nav>

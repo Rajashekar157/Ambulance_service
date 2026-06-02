@@ -9,10 +9,12 @@ import StandbyAmbulance from "./Components/StandbyAmbulance";
 import RoadAmbulance from "./Components/RoadAmbulance";
 import MedicalEquipment from "./Components/MedicalEquipment";
 import BodyFreezerService from "./Components/BodyFreezerService";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/about" element={<AboutUs />} />

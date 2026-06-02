@@ -144,7 +144,7 @@ export default function BodyFreezerService() {
         </p>
 
         <a href="tel:8247582810">
-          Call Now: 8247582810
+          Call Now: 7989827051
         </a>
 
       </section>

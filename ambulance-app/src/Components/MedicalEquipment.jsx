@@ -156,9 +156,9 @@ export default function MedicalEquipment() {
             Contact our support team for quick delivery and rental assistance.
           </p>
 
-          <h3>+91 8247582810</h3>
+          <h3>+91 7989827051</h3>
 
-            <a href="tel:+918247582810">
+            <a href="tel:+917989827051">
     <button>Call Now</button>
   </a>
 

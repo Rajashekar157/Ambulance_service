@@ -1,383 +1,317 @@
-.about-banner{
-    position:relative;
-    height:220px;
+/* ===========================
+   ABOUT BANNER
+=========================== */
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    overflow:hidden;
+.about-banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
 }
 
-.about-banner-img{
-    position:absolute;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
+.about-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.about-banner::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:rgba(0,43,82,.75);
-    z-index:1;
+.about-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 25, 50, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-.about-banner-overlay{
-    position:relative;
-    z-index:2;
-
-    text-align:center;
-    color:white;
-}
-.about-banner-overlay{
-    text-align:center;
-    color:#fff;
+.about-banner-overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.about-banner h1{
-    font-size:34px;
-    font-weight:700;
-    margin-bottom:10px;
+.banner-text {
+  max-width: 800px;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
-.breadcrumb{
-    display:inline-block;
-    background:rgba(255,255,255,.12);
-    padding:8px 18px;
-    border-radius:6px;
-    font-size:13px;
+/* ===========================
+   MAIN SECTION
+=========================== */
+
+.about-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
 }
 
-.breadcrumb span{
-    color:#ff5c35;
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.about-left {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
 }
 
-/* =======================
-   ABOUT PAGE
-======================= */
-
-.about-page{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 4%;
-
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:30px;
+.about-left h2 {
+  font-size: 2rem;
+  color: #002b52;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-/* LEFT SIDE */
-
-.about-left h2{
-    font-size:28px;
-    color:#0f172a;
-    margin-bottom:18px;
+.about-left h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ff3b3b;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  border-radius: 10px;
 }
 
-.about-left img{
-    width:100%;
-    border-radius:12px;
-    margin-bottom:18px;
+.about-left img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 25px 0;
+  transition: 0.4s;
 }
 
-.about-left p{
-    font-size:15px;
-    line-height:1.8;
-    color:#64748b;
-    margin-bottom:15px;
+.about-left img:hover {
+  transform: scale(1.02);
 }
 
-.about-left h3{
-    font-size:22px;
-    color:#0f172a;
-    margin:25px 0 15px;
+.about-left p {
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 20px;
 }
 
-.about-left ul{
-    padding-left:20px;
+.about-left h3 {
+  margin-top: 30px;
+  color: #002b52;
+  font-size: 1.4rem;
 }
 
-.about-left li{
-    font-size:15px;
-    color:#64748b;
-    margin-bottom:10px;
-    line-height:1.6;
+.about-left ul {
+  margin-top: 15px;
+  padding-left: 20px;
 }
 
-/* =======================
+.about-left ul li {
+  margin-bottom: 12px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ===========================
    SERVICE BOX
-======================= */
+=========================== */
 
-.service-box{
-    background:#fff;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,.06);
+.service-box {
+  background: linear-gradient(
+    135deg,
+    #002b52,
+    #005792
+  );
+
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
 }
 
-.service-box h3{
-    font-size:22px;
-    margin-bottom:15px;
-    color:#0f172a;
+.service-box h3 {
+  margin-bottom: 25px;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
-.service-box div{
-    background:#f8fafc;
-    padding:12px 15px;
-    border-radius:8px;
-    margin-bottom:10px;
-    font-size:14px;
-    color:#334155;
-    cursor:pointer;
-    transition:.3s;
+.service-box div {
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: .3s;
+  cursor: pointer;
+  font-weight: 500;
 }
 
-.banner-text{
-    max-width:700px;
-    margin:15px auto 0;
-    font-size:15px;
-    line-height:1.8;
-    color:#f1f5f9;
-}
-.service-box div:hover{
-    background:#eef4f9;
+.service-box div:hover {
+  transform: translateX(8px);
+  background: rgba(255,255,255,.25);
 }
 
-/* =======================
+/* ===========================
    HELPLINE BOX
-======================= */
-.helpline-box{
-    margin-top:30px;
-    padding:40px;
-    text-align:center;
-    color:white;
-    border-radius:20px;
+=========================== */
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+.helpline-box {
+  color: white;
+  text-align: center;
+  padding: 40px 25px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
 }
 
-.helpline-box h3{
-    font-size:24px;
-    margin-bottom:12px;
+.helpline-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-.helpline-box p{
-    font-size:14px;
-    line-height:1.7;
-    margin-bottom:15px;
+.helpline-box p {
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.helpline-box h2{
-    font-size:30px;
-    color:#ff5c35;
-    margin-bottom:15px;
+.helpline-box h2 {
+  font-size: 2.3rem;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.helpline-box button{
-    width:100%;
-    border:none;
-    background:#ff5c35;
-    color:white;
-    padding:12px;
-    border-radius:8px;
-    font-size:14px;
-    font-weight:600;
-    cursor:pointer;
+.helpline-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background: #ff3b3b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: .3s;
 }
 
-.helpline-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-
-    margin-top:10px;
-
-    padding:12px 25px;
-
-    background:#ff5c35;
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:8px;
-
-    font-size:15px;
-    font-weight:600;
+.helpline-btn:hover {
+  background: white;
+  color: #ff3b3b;
+  transform: translateY(-3px);
 }
 
-.helpline-btn:hover{
-    background:#ff7043;
-}
-/* =======================
-   MOBILE
-======================= */
+/* ===========================
+   FLOATING EFFECT
+=========================== */
 
-@media(max-width:780px){
-
-.about-banner{
-    height:220px;
+.service-box,
+.helpline-box,
+.about-left {
+  transition: .4s;
 }
 
-.about-banner h1{
-    font-size:36px;
+.service-box:hover,
+.helpline-box:hover,
+.about-left:hover {
+  transform: translateY(-5px);
 }
 
-.breadcrumb{
-    font-size:13px;
-    padding:8px 18px;
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .about-page {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .about-right {
+    order: -1;
+  }
+
+  .about-banner {
+    height: 400px;
+  }
+
+  .about-banner-overlay h1 {
+    font-size: 2.3rem;
+  }
 }
 
-.about-page{
-    grid-template-columns:1fr;
-    gap:30px;
-    padding:40px 20px;
+@media (max-width: 768px) {
+
+  .about-banner {
+    height: 320px;
+  }
+
+  .about-banner-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text {
+    font-size: 0.95rem;
+  }
+
+  .about-left {
+    padding: 20px;
+  }
+
+  .about-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-left h3 {
+    font-size: 1.2rem;
+  }
+
+  .helpline-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-box h3 {
+    font-size: 1.4rem;
+  }
 }
 
-.about-left h2{
-    font-size:30px;
-}
+@media (max-width: 480px) {
 
-.about-left img{
-    border-radius:14px;
-}
+  .about-page {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
 
-.about-left p{
-    font-size:15px;
-    line-height:1.8;
-}
+  .about-banner-overlay h1 {
+    font-size: 1.5rem;
+  }
 
-.about-left h3{
-    font-size:24px;
-}
+  .banner-text {
+    font-size: 0.9rem;
+  }
 
-.about-left li{
-    font-size:14px;
-    margin-bottom:10px;
-}
+  .service-box,
+  .helpline-box {
+    padding: 20px;
+  }
 
-.service-box{
-    padding:20px;
-}
-
-.service-box h3{
-    font-size:22px;
-}
-
-.service-box div{
-    font-size:14px;
-    padding:12px;
-}
-
-.helpline-box{
-    padding:25px;
-}
-
-.helpline-box h3{
-    font-size:24px;
-}
-
-.helpline-box p{
-    font-size:14px;
-    line-height:1.7;
-}
-
-.helpline-box h2{
-    font-size:30px;
-}
-
-.helpline-box button{
-    font-size:14px;
-    padding:12px;
-}
-
-}
-
-/* =================================
-   SMALL PHONES ONLY (320px)
-================================= */
-
-@media(max-width:320px){
-
-.about-banner{
-    height:160px;
-}
-
-.about-banner h1{
-    font-size:26px;
-}
-
-.breadcrumb{
-    font-size:11px;
-    padding:6px 12px;
-}
-
-.about-page{
-    grid-template-columns:1fr;
-    gap:20px;
-    padding:25px 15px;
-}
-
-.about-left h2{
-    font-size:22px;
-}
-
-.about-left p{
-    font-size:13px;
-}
-
-.about-left h3{
-    font-size:18px;
-}
-
-.about-left li{
-    font-size:13px;
-}
-
-.service-box{
-    padding:15px;
-}
-
-.service-box h3{
-    font-size:18px;
-}
-
-.service-box div{
-    font-size:13px;
-    padding:10px;
-}
-
-.helpline-box{
-    padding:20px;
-}
-
-.helpline-box h3{
-    font-size:20px;
-}
-
-.helpline-box p{
-    font-size:13px;
-}
-
-.helpline-box h2{
-    font-size:24px;
-}
-
-.helpline-box button{
-    font-size:13px;
-    padding:10px;
-}
-
-.about-left img{
-    border-radius:10px;
-}
-
+  .helpline-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

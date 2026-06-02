@@ -20,9 +20,20 @@ export default function NonEmergency() {
     `
   }}
 >
-  <div className="service-overlay">
-    {/* Content */}
-  </div>
+<div className="service-overlay">
+
+  <span className="service-badge">
+    24/7 Ambulance Support
+  </span>
+
+  <h1>Non Emergency Ambulance Service</h1>
+
+  <p>
+    Safe, comfortable and reliable patient transportation
+    across Hyderabad with trained staff and modern vehicles.
+  </p>
+
+</div>
 </section>
       {/* Content */}
       <section className="service-page">
@@ -31,7 +42,7 @@ export default function NonEmergency() {
 
           <div className="service-image-card">
             <img
-              src="assets/nonemergency.jpg"
+              src="assets/image4.jpg"
               alt=""
             />
           </div>
@@ -120,29 +131,30 @@ export default function NonEmergency() {
             <a href="/">Body Freezer Service</a>
           </div>
 
-        <div
-  className="call-box"
-  style={{
-    backgroundImage: `
-      linear-gradient(
-        rgba(15,60,104,.92),
-        rgba(15,60,104,.92)
-      ),
-      url('/assets/image4.jpg')
-    `
-  }}
->
-  <h3>Need Ambulance?</h3>
+       <div className="call-box">
+
+  <span className="call-badge">
+    24/7 Emergency Support
+  </span>
+
+  <h3>Need an Ambulance?</h3>
 
   <p>
-    Our dispatch team is available 24/7 for immediate booking.
+    Fast response across Hyderabad.
+    ICU, BLS, ALS and Patient Transport.
   </p>
 
-  <h2>8247582810</h2>
+  <div className="phone-box">
+    📞 +91 83414 08108
+  </div>
 
-  <a href="tel:+918247582810" className="call-now-btn">
-    Call Now
+  <a
+    href="tel:+918341408108"
+    className="call-now-btn"
+  >
+    Call Ambulance
   </a>
+
 </div>
         </div>
 

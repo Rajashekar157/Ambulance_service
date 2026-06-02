@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import "../styles/ContactUs.css";
-
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -69,8 +68,8 @@ export default function ContactUs() {
 
             <div>
               <h3>Phone Support</h3>
-              <p>08247582810 (Emergency Helpline)</p>
-              <p>+91 8247582810</p>
+              <p>08341408108 (Emergency Helpline)</p>
+              <p>+91 7989827051</p>
             </div>
 
           </div>
@@ -83,7 +82,7 @@ export default function ContactUs() {
 
             <div>
               <h3>Email Contact</h3>
-              <p>info@rrambulance.com</p>
+              <p>pummyp673@gmail.com</p>
             </div>
 
           </div>

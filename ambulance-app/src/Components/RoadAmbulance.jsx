@@ -160,8 +160,8 @@ export default function RoadAmbulance() {
           Our emergency dispatch team is available 24/7.
         </p>
 
-        <a href="tel:08125078218">
-          Call 08125078218
+        <a href="tel:7989827051" className="call-now-btn">
+          Call 7989827051
         </a>
 
       </section>

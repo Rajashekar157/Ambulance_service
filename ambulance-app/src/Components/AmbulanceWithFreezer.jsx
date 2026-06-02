@@ -147,10 +147,10 @@ export default function AmbulanceWithFreezer() {
     freezer ambulance transportation quickly and efficiently.
   </p>
 
-  <h2>8247582810</h2>
+    <h2>7989827051</h2>
 
-  <a
-    href="tel:+918247582810"
+    <a
+    href="tel:+917989827051"
     className="call-now-btn"
   >
     Call Now
